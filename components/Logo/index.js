@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 export default function Logo() {
 	return (
 		<>
-			<LogoContainer>LOGO</LogoContainer>
+			<Link href="/">
+				<LogoContainer> Kanzlei Isbrandt LOGO</LogoContainer>
+			</Link>
 		</>
 	);
 }
@@ -12,7 +15,7 @@ export default function Logo() {
 const LogoContainer = styled.div`
 	width: 100%;
 	position: unset !important;
-
+	border: 1px solid black;
 	position: relative;
 	width: 151px;
 	height: auto;

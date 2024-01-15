@@ -8,6 +8,15 @@ export default createGlobalStyle`
   }
   body {
     margin: 0;
-    font-family: system-ui;
+    height: 1500px;
+    font-family: Metropolis-Regular;
+  }
+
+  @font-face {
+    font-family: 'Metropolis-Regular';
+    src: url('/Metropolis-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
   }
 `;

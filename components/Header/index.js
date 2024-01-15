@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import Logo from "../Logo";
+import RightNavBar from "../RightNavBar";
 
 export default function Header({}) {
 	return (
 		<HeaderContainer>
 			<Logo></Logo>
+			<RightNavBar></RightNavBar>
 		</HeaderContainer>
 	);
 }
@@ -16,11 +18,11 @@ const HeaderContainer = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.8);
 	padding: 1.5rem 3rem 1.2rem;
-	position: sticky;
+	position: fixed;
 	top: 0;
-	background-color: var(--background-white);
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
 
 	@media (max-width: 1024px) {
 		padding: 1.5rem 2rem 1.2rem;
@@ -28,23 +30,4 @@ const HeaderContainer = styled.div`
 	@media (max-width: 768px) {
 		padding: 1rem;
 	}
-`;
-
-const NavContainer = styled.div`
-	width: 93%;
-	max-width: 97.5rem;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-
-	@media (max-width: 480px) {
-		width: 100%;
-	}
-`;
-const NavSectionContainer = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
 `;

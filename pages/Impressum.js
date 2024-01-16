@@ -8,7 +8,6 @@ export default function Impressum() {
 		<>
 			{" "}
 			<Header />
-			<ImpressumTitle> Impressum PAge</ImpressumTitle>
 			<h1>Impressum</h1>
 			<p>
 				Kanzlei Isbrandt

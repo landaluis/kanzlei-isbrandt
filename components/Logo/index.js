@@ -1,12 +1,29 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
+import Image from "next/image";
+import LogoKI from "../../public/LogoKI.png";
 
 export default function Logo() {
 	return (
 		<>
 			<Link href="/">
-				<LogoContainer> Kanzlei Isbrandt LOGO</LogoContainer>
+				<LogoContainer>
+					{" "}
+					<LogoContainer>
+						{" "}
+						<Image
+							src={LogoKI}
+							alt="KI Logo"
+							style={{
+								objectFit: "contain",
+								width: "100%",
+								position: "relative",
+								height: "unset",
+							}}
+						/>
+					</LogoContainer>
+				</LogoContainer>
 			</Link>
 		</>
 	);
@@ -15,9 +32,8 @@ export default function Logo() {
 const LogoContainer = styled.div`
 	width: 100%;
 	position: unset !important;
-	border: 1px solid black;
 	position: relative;
-	width: 151px;
+	width: 150px;
 	height: auto;
 
 	@media (max-width: 768px) {

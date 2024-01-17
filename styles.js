@@ -8,13 +8,13 @@ export default createGlobalStyle`
   }
   body {
     margin: 0;
-    height: 1500px;
-    font-family: Metropolis-Regular;
+    font-family: Ruluko-Regular;
+    background-color: #f8f8f8;
   }
 
   @font-face {
-    font-family: 'Metropolis-Regular';
-    src: url('/Metropolis-Regular.ttf') format('truetype');
+    font-family: 'Ruluko-Regular';
+    src: url('/Ruluko-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

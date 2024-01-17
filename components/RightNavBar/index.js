@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import AblaufKosten from "../AblaufKosten";
-import Kontakt from "../Kontakt";
-import Rechtsgebiete from "../Rechtsgebiete";
-import Ubermich from "../Ubermich";
-import TerminBuchen from "../TerminBuchen";
+import AblaufKostenLink from "../AblaufKostenLink";
+import KontaktLink from "../KontaktLink";
+import RechtsgebieteLink from "../RechtsgebieteLink";
+import UbermichLink from "../UbermichLink";
+import TerminBuchenLink from "../TerminBuchenLink";
 
 export default function RightNavBar({}) {
 	return (
 		<RightNavBarContainer>
-			<Rechtsgebiete />
-			<AblaufKosten />
-			<Ubermich />
-			<Kontakt />
-			<TerminBuchen />
+			<RechtsgebieteLink />
+			<AblaufKostenLink />
+			<UbermichLink />
+			<KontaktLink />
+			<TerminBuchenLink />
 		</RightNavBarContainer>
 	);
 }

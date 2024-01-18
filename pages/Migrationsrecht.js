@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import KontaktContent from "@/components/KontaktContent";
+import MigrationsrechtContent from "@/components/MigrationsrechtContent";
 
-export default function KontaktPage() {
+export default function MigrationsrechtPage() {
 	return (
 		<>
 			<Header />
-			<KontaktContent />
+			<MigrationsrechtContent />
 			<Footer />
 		</>
 	);

@@ -18,7 +18,7 @@ const Kontakt = styled.button`
 	padding: 0;
 	margin: 0;
 	cursor: pointer;
-	font-size: 1rem;
-	color: #7a8387;
+	font-size: 1.1rem;
+	color: #1a4d61;
 	font-family: Ruluko-Regular, sans-serif;
 `;

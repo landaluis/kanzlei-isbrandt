@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image";
+import Watermark from "../../public/Watermark.png";
 
 export default function AblaufKostenContent() {
 	return (
 		<>
-			<AblaufKostenTitle>Ablauf & Kosten</AblaufKostenTitle>
+			<AblaufKostenTitle>Ablauf und Kosten</AblaufKostenTitle>
 			<SectionContent>
 				<ContentWrapper>
 					<Content1>
@@ -63,24 +65,51 @@ export default function AblaufKostenContent() {
 						zu übersenden. <br></br> <br></br>
 					</Content2>
 				</ContentWrapper>
+				<ImageContainer>
+					<Image
+						src={Watermark}
+						alt="KI Logo"
+						style={{
+							height: "100%",
+							width: "auto",
+						}}
+					/>
+				</ImageContainer>
 			</SectionContent>
 		</>
 	);
 }
-const Content1Title = styled.h1``;
-const Content2Title = styled.h1``;
+
+const ImageContainer = styled.div`
+	position: absolute;
+	top: 0rem;
+	left: 49rem;
+	opacity: 0.2;
+	pointer-events: none;
+	z-index: 2;
+	height: 30rem;
+	width: auto;
+`;
+const Content1Title = styled.h1`
+	color: #1a4d61;
+	font-size: 2.5rem;
+`;
+const Content2Title = styled.h1`
+	color: #1a4d61;
+	font-size: 2.5rem;
+`;
 const Content1 = styled.div`
-	font-size: 15px;
+	font-size: 1.2rem;
 	margin-top: 2rem;
 	color: #333;
 	line-height: 1.5;
 `;
 const Content2 = styled.div`
-	font-size: 15px;
+	font-size: 1.2rem;
 	margin-top: 2rem;
 	color: #333;
 	line-height: 1.5;
-	margin-bottom: 2.5rem;
+	margin-bottom: 5.5rem;
 `;
 const ContentWrapper = styled.div`
 	max-width: 800px;
@@ -97,14 +126,10 @@ const SectionContent = styled.div`
 `;
 
 const AblaufKostenTitle = styled.h1`
-	width: 100%;
-	background-color: darkgray;
-	font-size: 1.7rem;
-	line-height: 4;
+	font-size: 3rem;
+	color: #1a4d61;
 	padding: 10px;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
-	margin-top: 6rem;
-	border-bottom: 1px solid black;
+	margin-top: 9rem;
+	margin-bottom: 0;
 `;

@@ -18,7 +18,6 @@ const HeaderContainer = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	// background-color: rgba(255, 255, 255, 0.95);
 	background-color: #f8f8f8;
 	padding: 1.5rem 3rem 1.2rem;
 	position: fixed;

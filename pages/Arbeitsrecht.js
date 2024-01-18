@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import KontaktContent from "@/components/KontaktContent";
+import ArbeitsrechtContent from "@/components/ArbeitsrechtContent";
 
-export default function KontaktPage() {
+export default function ArbeitsrechtPage() {
 	return (
 		<>
 			<Header />
-			<KontaktContent />
+			<ArbeitsrechtContent />
 			<Footer />
 		</>
 	);

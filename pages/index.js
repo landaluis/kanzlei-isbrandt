@@ -1,17 +1,14 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import styled from "styled-components";
+import HomeContent from "@/components/HomeContent";
 
-export default function Home() {
+export default function Home({ handleClick, currentLanguage }) {
 	return (
 		<main>
-			<Header />
-			<EmptyDiv></EmptyDiv>
+			<Header handleClick={handleClick} currentLanguage={currentLanguage} />
+
+			<HomeContent />
 			<Footer />
 		</main>
 	);
 }
-
-const EmptyDiv = styled.div`
-	height: 500px;
-`;

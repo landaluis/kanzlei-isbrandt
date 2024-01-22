@@ -19,12 +19,12 @@ export default function Footer() {
 					</List1>
 					<List2>
 						{" "}
-						<ListItem>
+						{/* <ListItem>
 							<MigrationsrechttLinkFooter />
 						</ListItem>
 						<ListItem>
 							<ArbeitsrechtLinkFooter />
-						</ListItem>
+						</ListItem> */}
 						<ListItem>
 							<ImpressumLink />
 						</ListItem>
@@ -88,6 +88,8 @@ const FooterContainer = styled.div`
 	min-height: auto;
 	// height: 20rem;
 	font-size: 1.2rem;
+	margin-left: auto;
+	margin-right: auto;
 `;
 
 const List = styled.ul`

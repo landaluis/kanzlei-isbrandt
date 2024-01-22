@@ -1,13 +1,14 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import UbermichContent from "@/components/UbermichContent";
+import RechtsgebieteContent from "@/components/RechtsgebieteContent";
 
-export default function UbermichPage() {
+export default function RechtsgebietePage() {
 	return (
 		<>
 			<Header />
-			<UbermichContent />
+			<RechtsgebieteContent />
+
 			<Footer />
 		</>
 	);

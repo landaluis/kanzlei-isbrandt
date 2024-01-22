@@ -32,8 +32,8 @@ export default function KontaktContent() {
 								33615 Bielefeld{" "}
 							</p>
 							<p>
-								E-Mail: <br />
-								info@ Tel: <br />
+								E-Mail: info@kanzlei-isbrandt.de <br />
+								Tel: <br />
 								Fax:{" "}
 							</p>
 						</Section2>

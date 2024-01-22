@@ -5,8 +5,9 @@ import KontaktLink from "../KontaktLink";
 import RechtsgebieteLink from "../RechtsgebieteLink";
 import UbermichLink from "../UbermichLink";
 import TerminBuchenLink from "../TerminBuchenLink";
+import LanguageSwitcher from "../LenguageSwitcher";
 
-export default function RightNavBar({}) {
+export default function RightNavBar({ handleClick, currentLanguage }) {
 	return (
 		<RightNavBarContainer>
 			<RechtsgebieteLink />
@@ -14,6 +15,10 @@ export default function RightNavBar({}) {
 			<UbermichLink />
 			<KontaktLink />
 			<TerminBuchenLink />
+			<LanguageSwitcher
+				handleClick={handleClick}
+				currentLanguage={currentLanguage}
+			/>
 		</RightNavBarContainer>
 	);
 }

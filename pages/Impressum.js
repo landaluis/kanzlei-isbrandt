@@ -4,13 +4,13 @@ import Footer from "@/components/Footer";
 import styled from "styled-components";
 import ImpressumContent from "@/components/ImpressumContent";
 
-export default function Impressum() {
+export default function Impressum({ handleClick, currentLanguage }) {
 	return (
 		<>
 			{" "}
-			<Header />
+			<Header handleClick={handleClick} currentLanguage={currentLanguage} />
 			<ImpressumContent />
-			<Footer />{" "}
+			<Footer currentLanguage={currentLanguage} />{" "}
 		</>
 	);
 }

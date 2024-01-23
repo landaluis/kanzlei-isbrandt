@@ -2,11 +2,11 @@ import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 
-export default function KontaktLink() {
+export default function KontaktLink({ currentLanguage }) {
 	return (
 		<>
 			<Link href="/Kontakt">
-				<Kontakt>Kontakt</Kontakt>
+				<Kontakt>{currentLanguage === "DE" ? "Kontakt" : "Contact"}</Kontakt>
 			</Link>
 		</>
 	);

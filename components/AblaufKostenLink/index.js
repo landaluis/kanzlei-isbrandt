@@ -2,11 +2,15 @@ import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 
-export default function AblaufKostenLink() {
+export default function AblaufKostenLink({ currentLanguage }) {
 	return (
 		<>
 			<Link href="/AblaufKosten">
-				<AblaufKosten>Ablauf und Kosten</AblaufKosten>
+				<AblaufKosten>
+					{currentLanguage === "DE"
+						? "Ablauf und Kosten"
+						: "Procedure and costs"}
+				</AblaufKosten>
 			</Link>
 		</>
 	);

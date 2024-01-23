@@ -2,10 +2,10 @@ import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 
-export default function ImpressumLink() {
+export default function ImpressumLink({ currentLanguage }) {
 	return (
 		<>
-			<Container>
+			<Container currentLanguage={currentLanguage}>
 				<Link href="/Impressum">
 					<Impressum> &nbsp;&nbsp;&gt;&nbsp;&nbsp;Impressum</Impressum>
 				</Link>

@@ -2,11 +2,13 @@ import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 
-export default function UbermichLink() {
+export default function UbermichLink({ currentLanguage }) {
 	return (
 		<>
 			<Link href="/Ubermich">
-				<Ubermich>Über mich</Ubermich>
+				<Ubermich>
+					{currentLanguage === "DE" ? "Über mich" : "About me"}
+				</Ubermich>
 			</Link>
 		</>
 	);

@@ -4,10 +4,8 @@ import ImpressumLink from "../ImpressumLink";
 import LogoKI from "../../public/LogoKI.png";
 import Image from "next/image";
 import KontaktLinkFooter from "../KontaktLinkFooter";
-import ArbeitsrechtLinkFooter from "../ArbeitsrechtFooterLink";
-import MigrationsrechttLinkFooter from "../MigrationsrechtFooterLink";
 
-export default function Footer() {
+export default function Footer({ currentLanguage }) {
 	return (
 		<>
 			<FooterContainer>
@@ -19,17 +17,11 @@ export default function Footer() {
 					</List1>
 					<List2>
 						{" "}
-						{/* <ListItem>
-							<MigrationsrechttLinkFooter />
-						</ListItem>
-						<ListItem>
-							<ArbeitsrechtLinkFooter />
-						</ListItem> */}
 						<ListItem>
 							<ImpressumLink />
 						</ListItem>
 						<ListItem>
-							<KontaktLinkFooter />
+							<KontaktLinkFooter currentLanguage={currentLanguage} />
 						</ListItem>
 					</List2>
 					<ImageContainer>

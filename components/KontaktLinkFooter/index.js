@@ -2,12 +2,16 @@ import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 
-export default function KontaktLinkFooter() {
+export default function KontaktLinkFooter({ currentLanguage }) {
 	return (
 		<>
 			<Container>
 				<Link href="/Kontakt">
-					<Kontakt> &nbsp;&nbsp;&gt;&nbsp;&nbsp;Kontakt</Kontakt>
+					<Kontakt currentLanguage={currentLanguage}>
+						{" "}
+						&nbsp;&nbsp;&gt;&nbsp;&nbsp;
+						{currentLanguage === "DE" ? "Kontakt" : "Contact"}
+					</Kontakt>
 				</Link>
 			</Container>
 		</>

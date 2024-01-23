@@ -3,7 +3,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import { useState, useEffect, useRef } from "react";
 
-export default function RechtsgebieteLink() {
+export default function RechtsgebieteLink({ currentLanguage }) {
 	const [isOpen, setIsOpen] = useState(false);
 	const dropdownRef = useRef(null);
 
@@ -27,13 +27,20 @@ export default function RechtsgebieteLink() {
 	return (
 		<>
 			<DropdownContainer ref={dropdownRef}>
-				<DropdownButton onClick={handleToggle}>Rechtsgebiete</DropdownButton>
+				<DropdownButton onClick={handleToggle}>
+					{" "}
+					{currentLanguage === "DE" ? "Rechtsgebiete" : "Fields of law"}
+				</DropdownButton>
 				<DropdownContent isOpen={isOpen}>
 					<Link href="/Migrationsrecht" style={{ textDecoration: "none" }}>
-						<DropdownLink>Migrationsrecht</DropdownLink>
+						<DropdownLink>
+							{currentLanguage === "DE" ? "Migrationsrecht" : "Immigration Law"}
+						</DropdownLink>
 					</Link>
 					<Link href="/Arbeitsrecht" style={{ textDecoration: "none" }}>
-						<DropdownLink>Arbeitsrecht</DropdownLink>
+						<DropdownLink>
+							{currentLanguage === "DE" ? "Arbeitsrecht" : "Employment Law "}
+						</DropdownLink>
 					</Link>
 				</DropdownContent>
 			</DropdownContainer>

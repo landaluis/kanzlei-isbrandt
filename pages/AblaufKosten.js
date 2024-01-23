@@ -7,8 +7,8 @@ export default function AblaufKostenPage({ handleClick, currentLanguage }) {
 	return (
 		<>
 			<Header handleClick={handleClick} currentLanguage={currentLanguage} />
-			<AblaufKostenContent />
-			<Footer />
+			<AblaufKostenContent currentLanguage={currentLanguage} />
+			<Footer currentLanguage={currentLanguage} />
 		</>
 	);
 }

@@ -3,12 +3,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import UbermichContent from "@/components/UbermichContent";
 
-export default function UbermichPage() {
+export default function UbermichPage({ handleClick, currentLanguage }) {
 	return (
 		<>
-			<Header />
-			<UbermichContent />
-			<Footer />
+			<Header handleClick={handleClick} currentLanguage={currentLanguage} />
+			<UbermichContent currentLanguage={currentLanguage} />
+			<Footer currentLanguage={currentLanguage} />
 		</>
 	);
 }

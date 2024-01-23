@@ -2,11 +2,13 @@ import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 
-export default function TerminBuchenLink() {
+export default function TerminBuchenLink({ currentLanguage }) {
 	return (
 		<>
 			<Link href="/TerminBuchen">
-				<TerminBuchen>Termin Buchen</TerminBuchen>
+				<TerminBuchen>
+					{currentLanguage === "DE" ? "Termin Buchen" : "Book appointment"}
+				</TerminBuchen>
 			</Link>
 		</>
 	);

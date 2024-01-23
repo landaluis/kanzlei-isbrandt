@@ -10,11 +10,26 @@ import LanguageSwitcher from "../LenguageSwitcher";
 export default function RightNavBar({ handleClick, currentLanguage }) {
 	return (
 		<RightNavBarContainer>
-			<RechtsgebieteLink />
-			<AblaufKostenLink />
-			<UbermichLink />
-			<KontaktLink />
-			<TerminBuchenLink />
+			<RechtsgebieteLink
+				handleClick={handleClick}
+				currentLanguage={currentLanguage}
+			/>
+			<AblaufKostenLink
+				handleClick={handleClick}
+				currentLanguage={currentLanguage}
+			/>
+			<UbermichLink
+				handleClick={handleClick}
+				currentLanguage={currentLanguage}
+			/>
+			<KontaktLink
+				handleClick={handleClick}
+				currentLanguage={currentLanguage}
+			/>
+			<TerminBuchenLink
+				handleClick={handleClick}
+				currentLanguage={currentLanguage}
+			/>
 			<LanguageSwitcher
 				handleClick={handleClick}
 				currentLanguage={currentLanguage}

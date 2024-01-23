@@ -5,15 +5,15 @@ import TerminBuchenContent from "@/components/TerminBuchenContent";
 import styled from "styled-components";
 import { InlineWidget } from "react-calendly";
 
-export default function InLineComponent() {
+export default function TerminBuchenPage({ handleClick, currentLanguage }) {
 	return (
 		<>
-			<Header />
+			<Header handleClick={handleClick} currentLanguage={currentLanguage} />
 			<TerminBuchenContent />
 			{/* <div className="inline-widget">
 				<InlineWidget url="https://calendly.com/kanzlei-isbrandt" />
 			</div> */}
-			<Footer></Footer>
+			<Footer currentLanguage={currentLanguage} />
 		</>
 	);
 }

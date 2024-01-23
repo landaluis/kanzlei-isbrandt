@@ -4,12 +4,14 @@ import Image from "next/image";
 import Watermark from "../../public/Watermark.png";
 import Map from "../../public/Map.png";
 
-export default function KontaktContent() {
+export default function KontaktContent({ currentLanguage }) {
 	return (
 		<>
 			{" "}
 			<KontaktContainer>
-				<KontakTitle>Kontakt</KontakTitle>
+				<KontakTitle currentLanguage={currentLanguage}>
+					{currentLanguage === "DE" ? "Kontakt" : "Contact"}
+				</KontakTitle>
 				<Row>
 					<KontaktMap>
 						<Section1>
@@ -23,7 +25,11 @@ export default function KontaktContent() {
 							/>
 						</Section1>
 						<Section2>
-							<p>Bürogemeinschaft Friedrichstraße</p>
+							<p>
+								{currentLanguage === "DE"
+									? "Bürogemeinschaft Friedrichstraße"
+									: "Shared office Friedrichstraße"}
+							</p>
 							<p>
 								Kanzlei Isbrandt
 								<br />
@@ -41,46 +47,75 @@ export default function KontaktContent() {
 
 					<RightSide>
 						<Directions>
-							<TitleH2>Bürogemeinschaft Friedrichstraße</TitleH2>
-							<TitleH3>Anreise mit dem Auto </TitleH3>
+							<TitleH2>
+								{currentLanguage === "DE"
+									? "Bürogemeinschaft Friedrichstraße"
+									: "Shared office Friedrichstraße"}
+							</TitleH2>
+							<TitleH3>
+								{currentLanguage === "DE"
+									? "Anreise mit dem Auto"
+									: "Getting There by Car"}
+							</TitleH3>
 							<p>
-								Wenn Sie mit dem Auto anreisen, empfehle ich genügend Zeit für
-								die Suche eines Parkplatzes einzuplanen. Alternativ können Sie
-								auch die Parkhäuser am Hauptbahnhof oder Zentrum nutzen. Diese
-								sind wenige Gehminuten von der Kanzlei entfernt.{" "}
+								{currentLanguage === "DE"
+									? "Wenn Sie mit dem Auto anreisen, empfehle ich genügend Zeit für die Suche eines Parkplatzes einzuplanen. Alternativ können Sie auch die Parkhäuser am Hauptbahnhof oder Zentrum nutzen. Diese sind wenige Gehminuten von der Kanzlei entfernt."
+									: " If you're arriving by car, I recommend allocating enough time to find parking. Alternatively, you can use the parking garages at the main station or in the city center, which are just a short walk from the law firm."}
 							</p>
-							<TitleH3>Anreise mit Bus und Bahn</TitleH3>
+							<TitleH3>
+								{currentLanguage === "DE"
+									? "Anreise mit Bus und Bahn"
+									: "Getting There by Bus and Train"}
+							</TitleH3>
 
 							<p>
-								Vom Hauptbahnhof gelangen Sie mit der Stadtbahn der Linie 4
-								(Richtung Universität) zur Haltestelle Siegfriedplatz. Von dort
-								aus sind es weniger als 150 m bis zur Kanzlei.
+								{currentLanguage === "DE"
+									? "Vom Hauptbahnhof gelangen Sie mit der Stadtbahn der Linie 4 (Richtung Universität) zur Haltestelle Siegfriedplatz. Von dort aus sind es weniger als 150 m bis zur Kanzlei."
+									: "From the main station, take tram line 4 (towards University) to the Siegfriedplatz stop. From there, it's less than 150 meters to the law firm."}
 							</p>
-							<TitleH3>Barrierefreiheit</TitleH3>
+							<TitleH3>
+								{" "}
+								{currentLanguage === "DE"
+									? "Barrierefreiheit"
+									: "Accessibility"}
+							</TitleH3>
 
 							<p>
-								Meine Kanzlei befindet sich im ersten Stock und ist über eine
-								Treppe zugänglich. Ein Aufzug steht leider nicht zur Verfügung.
-								Falls Sie auf eine barrierearme Umgebung angewiesen sind, bitte
-								ich Sie, dies bereits in Ihrer Kontaktanfrage anzugeben. Es
-								besteht selbstverständlich die Möglichkeit, dass unser
-								Beratungsgespräch an einem barrierearmen Ort stattfindet. In
-								diesem Fall werde ich mich um alle weiteren organisatorischen
-								Details kümmern.
+								{currentLanguage === "DE"
+									? "Meine Kanzlei befindet sich im ersten Stock und ist über eine Treppe zugänglich. Ein Aufzug steht leider nicht zur Verfügung. Falls Sie auf eine barrierearme Umgebung angewiesen sind, bitte ich Sie, dies bereits in Ihrer Kontaktanfrage anzugeben. Es besteht selbstverständlich die Möglichkeit, dass unser Beratungsgespräch an einem barrierearmen Ort stattfindet. In diesem Fall werde ich mich um alle weiteren organisatorischen Details kümmern."
+									: "My law firm is located on the first floor and is accessible by stairs. Unfortunately, there is no elevator available. If you require an environment with reduced barriers, please indicate this in your initial contact request. Of course, it is possible for our consultation to take place in a barrier-free location. In that case, I will take care of all further organizational details."}
 							</p>
 						</Directions>
 						<Offnung>
-							<TitleH3>Öffnungszeiten</TitleH3>
+							<TitleH3>
+								{currentLanguage === "DE" ? "Öffnungszeiten" : "Opening hours"}
+							</TitleH3>
 							<TimeContainer1>
-								<Day>Montag &ndash; Donnerstag</Day>
-								<Hour>08:30 &ndash; 17:30 Uhr</Hour>
+								<Day>
+									{" "}
+									{currentLanguage === "DE" ? "Montag" : "Monday"} &ndash;{" "}
+									{currentLanguage === "DE" ? "Donnerstag" : "Thursday"}
+								</Day>
+								<Hour>
+									08:30 &ndash; 17:30{" "}
+									{currentLanguage === "DE" ? "Uhr" : "Hrs."}
+								</Hour>
 							</TimeContainer1>
 							<TimeContainer2>
-								<Day>Freitags</Day>
-								<Hour>08:30 &ndash; 13:00 Uhr</Hour>
+								<Day>
+									{currentLanguage === "DE" ? "Freitags" : "Freitags"} &ndash;{" "}
+								</Day>
+								<Hour>
+									08:30 &ndash; 13:00{" "}
+									{currentLanguage === "DE" ? "Uhr" : "Hrs."}
+								</Hour>
 							</TimeContainer2>
 
-							<h3>Termine nur nach Vereinbarung!</h3>
+							<h3>
+								{currentLanguage === "DE"
+									? "Termine nur nach Vereinbarung!"
+									: "Appointments only by arrangement!"}
+							</h3>
 						</Offnung>
 					</RightSide>
 				</Row>

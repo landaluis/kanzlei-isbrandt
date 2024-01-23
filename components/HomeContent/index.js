@@ -7,7 +7,7 @@ import asylum from "../../public/asylum.png";
 import work from "../../public/work.png";
 import euro from "../../public/euro.png";
 
-export default function HomeContent() {
+export default function HomeContent({ currentLanguage }) {
 	return (
 		<>
 			<HomeWrapper>
@@ -23,30 +23,36 @@ export default function HomeContent() {
 						/>
 					</ImageContainer>
 					<TeaserContent>
-						<TeaserTitle>Schön, dass Sie zu mir gefunden haben.</TeaserTitle>
+						<TeaserTitle>
+							{" "}
+							{currentLanguage === "DE"
+								? "Schön, dass Sie zu mir gefunden haben."
+								: "I'm glad you found me."}
+						</TeaserTitle>
 						<p>
-							Das entschiedene Eintreten für Menschen-, Bürger- und
-							Arbeitnehmer*innenrechte ist ein fester Bestandteil meiner
-							anwaltlichen Tätigkeit. Ich vertrete neben den rechtlichen
-							Interessen von Geflüchteten und Migrant*innen auch
-							Arbeitnehmer*innen.
+							{currentLanguage === "DE"
+								? "Das entschiedene Eintreten für Menschen-, Bürger- und Arbeitnehmer*innenrechte ist ein fester Bestandteil meiner anwaltlichen Tätigkeit. Ich vertrete neben den rechtlichen Interessen von Geflüchteten und Migrant*innen auch Arbeitnehmer*innen."
+								: "The resolute advocacy for human, citizen, and workers' rights is an integral part of my legal practice. In addition to representing the legal interests of refugees and migrants, I also advocate for the rights of workers. "}
 						</p>
 
 						<p>
-							Über die anwaltliche Tätigkeit hinaus engagiere ich mich für
-							Bürger*innen &ndash; und Menschenrechte in verschiedenen
-							rechtspolitischen Vereinigungen.
+							{currentLanguage === "DE"
+								? "	Über die anwaltliche Tätigkeit hinaus engagiere ich mich für Bürger*innen &ndash; und Menschenrechte in verschiedenen rechtspolitischen Vereinigungen."
+								: "Beyond my legal work, I am involved in various legal and political organizations, where I actively contribute to the promotion of citizen and human rights."}
 						</p>
 
 						<p>
-							Insbesondere die Vertretung von Menschen aus der LGBTQI+-Community
-							und Opfern von Sexismus, frauenspezifischer Gewalt und Ableismus
-							ist mir ein großes Anliegen.
+							{currentLanguage === "DE"
+								? "Insbesondere die Vertretung von Menschen aus der LGBTQI+-Community und Opfern von Sexismus, frauenspezifischer Gewalt und Ableismus ist mir ein großes Anliegen."
+								: "Particularly, I am deeply committed to representing individuals from the LGBTQI+ community and victims of sexism, gender-based violence, and ableism."}
 						</p>
 					</TeaserContent>
 				</Teaser>
 				<Separator></Separator>
-				<RechtsgebieteTitle>Rechtsgebiete</RechtsgebieteTitle>
+				<RechtsgebieteTitle>
+					{" "}
+					{currentLanguage === "DE" ? "Rechtsgebiete" : "Fields of law"}
+				</RechtsgebieteTitle>
 				<Rechtsgebiete>
 					<Link href="/Migrationsrecht" style={{ textDecoration: "none" }}>
 						<Circle>
@@ -59,9 +65,15 @@ export default function HomeContent() {
 									position: "relative",
 									height: "unset",
 								}}></Image>
-							<TitleCircle>Migrationsrecht</TitleCircle>
+							<TitleCircle>
+								{currentLanguage === "DE"
+									? "Migrationsrecht"
+									: "Inmigration law"}
+							</TitleCircle>
 							<TextCircle>
-								Wie Rechtsbeistand Verfahrensrechte einfordern kann.
+								{currentLanguage === "DE"
+									? "Wie Rechtsbeistand Verfahrensrechte einfordern kann."
+									: "How legal aid can claim procedural rights"}
 							</TextCircle>
 						</Circle>
 					</Link>
@@ -76,10 +88,14 @@ export default function HomeContent() {
 									position: "relative",
 									height: "unset",
 								}}></Image>
-							<TitleCircle>Arbeitsrecht</TitleCircle>
+							<TitleCircle>
+								{" "}
+								{currentLanguage === "DE" ? "Arbeitsrecht" : "Employment law"}
+							</TitleCircle>
 							<TextCircle>
-								Wie eine rechtliche Beratung die Komplexität des
-								Arbeitsverhältnisses bewältigen kann?
+								{currentLanguage === "DE"
+									? "Wie eine rechtliche Beratung die Komplexität des Arbeitsverhältnisses bewältigen kann?"
+									: "How can legal advice deal with the complexity of the employment relationship?"}
 							</TextCircle>
 						</Circle>
 					</Link>
@@ -96,7 +112,12 @@ export default function HomeContent() {
 								position: "relative",
 								height: "unset",
 							}}></Image>
-						<AblaufKostenTitle>Ablauf und Kosten</AblaufKostenTitle>
+						<AblaufKostenTitle>
+							{" "}
+							{currentLanguage === "DE"
+								? "Ablauf und Kosten"
+								: "Procedure and costs"}
+						</AblaufKostenTitle>
 					</Link>
 				</AblaufKostenWrapper>
 			</HomeWrapper>
@@ -159,35 +180,23 @@ const RechtsgebieteTitle = styled.h1`
 `;
 
 const Circle = styled.div`
-	// margin-top: 5rem;
-
 	border: 1px solid #1a4d61;
 	width: 25vw;
 	height: 25vw;
 	border-radius: 50%;
 	background-color: #f8f8f8;
-	// background-color: rgba(26, 77, 97, 1);
 	text-align: center;
-	// line-height: 100px;
 	color: #1a4d61;
-	// align-items: center;
-	text-decoration: none;
-	// font-family: Arial, sans-serif;
 	font-size: 2rem;
 	transition: background-color 0.3s ease;
-	padding: 15px;
+	padding: 2rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 
 	&:hover {
-		background-color: rgba(
-			26,
-			77,
-			97,
-			0.2
-		); /* Change the background color on hover */
+		background-color: rgba(26, 77, 97, 0.2);
 	}
 `;
 const Rechtsgebiete = styled.div`

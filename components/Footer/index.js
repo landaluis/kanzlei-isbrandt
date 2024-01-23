@@ -45,17 +45,24 @@ export default function Footer({ currentLanguage }) {
 const ImageContainer = styled.div`
 	position: relative;
 	top: 0.5rem;
-	left: 6rem;
+	left: 0rem;
 	opacity: 1;
 	pointer-events: none;
 	z-index: 4;
 	height: 10rem;
 	width: auto;
+
+	@media (max-width: 321px) {
+		display: none;
+	}
 `;
 const Section1 = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	@media (max-width: 321px) {
+		flex-direction: column;
+	}
 `;
 const Section2 = styled.div``;
 const Copyright = styled.div`
@@ -78,10 +85,14 @@ const FooterContainer = styled.div`
 	bottom: 0;
 	width: 100%;
 	min-height: auto;
-	// height: 20rem;
+
 	font-size: 1.2rem;
 	margin-left: auto;
 	margin-right: auto;
+
+	@media (max-width: 321px) {
+		padding: 0.5rem;
+	}
 `;
 
 const List = styled.ul`
@@ -97,6 +108,12 @@ const List = styled.ul`
 const List1 = styled(List)`
 	margin-left: 2rem;
 	font-size: 1.35rem;
+
+	@media (max-width: 321px) {
+		padding: 1rem;
+		font-size: 1.1rem;
+		margin-top: 1rem;
+	}
 `;
 
 const List2 = styled(List)`
@@ -104,6 +121,11 @@ const List2 = styled(List)`
 	padding: 1rem 1.5rem 1rem 1.5rem;
 	border-left: 1px dotted rgba(255, 255, 255, 0.2);
 	border-right: 1px dotted rgba(255, 255, 255, 0.2);
+
+	@media (max-width: 321px) {
+		padding: 1rem;
+		margin-left: 0;
+	}
 `;
 
 const ListItem = styled.li`

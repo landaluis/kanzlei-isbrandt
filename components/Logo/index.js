@@ -10,20 +10,17 @@ export default function Logo() {
 			<Link href="/" style={{ textDecoration: "none" }}>
 				<LogoContainer>
 					{" "}
-					<LogoContainer>
-						{" "}
-						<Image
-							src={Watermark}
-							alt="KI Logo"
-							style={{
-								objectFit: "contain",
-								width: "100%",
-								position: "relative",
-								height: "unset",
-							}}
-						/>
-						<LogoText>Kanzlei Isbrandt</LogoText>
-					</LogoContainer>
+					<Image
+						src={Watermark}
+						alt="KI Logo"
+						style={{
+							objectFit: "contain",
+							width: "100%",
+							position: "relative",
+							height: "unset",
+						}}
+					/>
+					<LogoText>Kanzlei Isbrandt</LogoText>
 				</LogoContainer>
 			</Link>
 		</>

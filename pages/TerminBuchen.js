@@ -9,7 +9,7 @@ export default function TerminBuchenPage({ handleClick, currentLanguage }) {
 	return (
 		<>
 			<Header handleClick={handleClick} currentLanguage={currentLanguage} />
-			<TerminBuchenContent />
+			<TerminBuchenContent currentLanguage={currentLanguage} />
 			{/* <div className="inline-widget">
 				<InlineWidget url="https://calendly.com/kanzlei-isbrandt" />
 			</div> */}

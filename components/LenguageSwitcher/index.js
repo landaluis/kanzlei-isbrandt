@@ -16,4 +16,9 @@ const Button = styled.button`
 	padding: 5px 10px;
 	cursor: pointer;
 	border-radius: 5px;
+	position: relative;
+
+	@media (max-width: 768px) {
+		margin-top: 2rem;
+	}
 `;

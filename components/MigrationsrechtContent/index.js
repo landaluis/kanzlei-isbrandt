@@ -54,14 +54,14 @@ export default function MigrationsrechtContent({ currentLanguage }) {
 	);
 }
 const ContentBox = styled.div`
-	// border: 1px solid;
-	// color: #1a4d61;
 	padding: 1rem;
 	border-radius: 10px;
 	background-color: rgba(26, 77, 97, 0.2);
-	// margin-bottom: 1rem;
-	// margin-top: 7rem;
 	margin: 9rem 10rem 2rem;
+
+	@media (max-width: 321px) {
+		margin: 9rem 1rem 2rem;
+	}
 `;
 
 const ImageContainer = styled.div`
@@ -73,11 +73,14 @@ const ImageContainer = styled.div`
 	z-index: 2;
 	height: 30rem;
 	width: auto;
+
+	@media (max-width: 320px) {
+		height: 15rem;
+		width: auto;
+		top: 15rem;
+		left: 3rem;
+	}
 `;
-// const Content1Title = styled.h1`
-// 	color: #1a4d61;
-// 	font-size: 2.5rem;
-// `;
 
 const Content1 = styled.div`
 	font-size: 1.2rem;
@@ -109,4 +112,8 @@ const MigrationsrechtTitle = styled.h1`
 	text-align: center;
 	margin-top: 1rem;
 	margin-bottom: 0rem;
+
+	@media (max-width: 321px) {
+		font-size: 2rem;
+	}
 `;

@@ -60,6 +60,10 @@ const DropdownButton = styled.button`
 	padding: 10px;
 	border: none;
 	cursor: pointer;
+
+	@media (max-width: 768px) {
+		font-size: 1.5rem;
+	}
 `;
 
 const DropdownContent = styled.div`
@@ -81,5 +85,9 @@ const DropdownLink = styled.div`
 	color: #1a4d61;
 	&:hover {
 		background-color: #ddd;
+	}
+
+	@media (max-width: 768px) {
+		font-size: 1.5rem;
 	}
 `;

@@ -126,6 +126,9 @@ export default function HomeContent({ currentLanguage }) {
 }
 const TitleCircle = styled.h3`
 	margin: 1rem;
+
+	@media (max-width: 320px) {
+	}
 `;
 const TextCircle = styled.p`
 	font-size: 1rem;
@@ -144,31 +147,33 @@ const AblaufKostenWrapper = styled.div`
 	text-align: center;
 
 	&:hover {
-		background-color: rgba(
-			26,
-			77,
-			97,
-			0.2
-		); /* Change the background color on hover */
+		background-color: rgba(26, 77, 97, 0.2);
 	}
 `;
 const AblaufKostenTitle = styled.h2`
 	font-size: 1.5rem;
 	color: #1a4d61;
 	padding: 0rem;
-	// text-align: right;
 	margin-top: 2rem;
 	margin-bottom: 0rem;
+
+	@media (max-width: 320px) {
+	}
 `;
 const Separator = styled.div`
 	border-bottom: 1px solid rgba(26, 77, 97, 0.5);
-	padding-top: 1rem;
+	padding-top: 0rem;
 	padding-bottom: 4rem;
 	width: 80%;
 	justify-content: center;
 	margin: 0 auto;
 	margin-bottom: 2rem;
 	display: flex;
+
+	@media (max-width: 320px) {
+		width: 90%;
+		margin-bottom: 4rem;
+	}
 `;
 const RechtsgebieteTitle = styled.h1`
 	font-size: 3rem;
@@ -177,6 +182,11 @@ const RechtsgebieteTitle = styled.h1`
 	text-align: center;
 	margin-top: 2rem;
 	margin-bottom: 0rem;
+
+	@media (max-width: 320px) {
+		font-size: 2.1rem;
+		margin-top: 0rem;
+	}
 `;
 
 const Circle = styled.div`
@@ -194,14 +204,28 @@ const Circle = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.55);
 
 	&:hover {
 		background-color: rgba(26, 77, 97, 0.2);
+	}
+
+	@media (max-width: 320px) {
+		width: 15rem;
+		height: 15rem;
+		margin-top: 2rem;
+		font-size: 1.3rem;
 	}
 `;
 const Rechtsgebiete = styled.div`
 	display: flex;
 	justify-content: space-around;
+
+	@media (max-width: 320px) {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
 `;
 const ImageContainer = styled.div`
 	position: relative;
@@ -210,6 +234,10 @@ const ImageContainer = styled.div`
 	z-index: 2;
 	height: 30rem;
 	width: auto;
+	@media (max-width: 320px) {
+		width: 20rem;
+		height: 10rem;
+	}
 `;
 const HomeWrapper = styled.div`
 	margin: 5rem;
@@ -217,8 +245,12 @@ const HomeWrapper = styled.div`
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	// align-items: center;
 	justify-content: center;
+
+	@media (max-width: 320px) {
+		padding: 5rem 1rem 2rem;
+		margin: 0;
+	}
 `;
 
 const TeaserTitle = styled.h2`
@@ -233,6 +265,10 @@ const Teaser = styled.div`
 	margin-top: 0rem;
 	color: #333;
 	text-align: justify;
+
+	@media (max-width: 320px) {
+		flex-direction: column;
+	}
 `;
 
 const TeaserContent = styled.div`

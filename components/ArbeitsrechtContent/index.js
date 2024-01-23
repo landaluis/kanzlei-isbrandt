@@ -48,14 +48,14 @@ export default function ArbeitsrechtContent({ currentLanguage }) {
 }
 
 const ContentBox = styled.div`
-	// border: 1px solid;
-	// color: #1a4d61;
 	padding: 1rem;
 	border-radius: 10px;
 	background-color: rgba(26, 77, 97, 0.2);
-	// margin-bottom: 1rem;
-	// margin-top: 7rem;
 	margin: 9rem 10rem 2rem;
+
+	@media (max-width: 321px) {
+		margin: 9rem 1rem 2rem;
+	}
 `;
 
 const ImageContainer = styled.div`
@@ -67,10 +67,13 @@ const ImageContainer = styled.div`
 	z-index: 2;
 	height: 28rem;
 	width: auto;
-`;
-const Content1Title = styled.h1`
-	color: #1a4d61;
-	font-size: 2.5rem;
+
+	@media (max-width: 320px) {
+		height: 15rem;
+		width: auto;
+		top: 15rem;
+		left: 3rem;
+	}
 `;
 
 const Content1 = styled.div`
@@ -103,4 +106,8 @@ const ArbeitsrechtTitle = styled.h1`
 	text-align: center;
 	margin-top: 0rem;
 	margin-bottom: 0;
+
+	@media (max-width: 321px) {
+		font-size: 2rem;
+	}
 `;

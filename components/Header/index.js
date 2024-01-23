@@ -2,15 +2,21 @@ import React from "react";
 import styled from "styled-components";
 import Logo from "../Logo";
 import RightNavBar from "../RightNavBar";
+import Burger from "../BurgerMenu";
 
-export default function Header({ handleClick, currentLanguage }) {
+export default function Header({ handleClick, currentLanguage, open }) {
 	return (
 		<HeaderContainer>
-			<Logo></Logo>
-			<RightNavBar
+			<Logo />
+			<Burger
+				open={open}
 				handleClick={handleClick}
 				currentLanguage={currentLanguage}
 			/>
+			{/* <RightNavBar
+				handleClick={handleClick}
+				currentLanguage={currentLanguage}
+			/> */}
 		</HeaderContainer>
 	);
 }
@@ -32,5 +38,10 @@ const HeaderContainer = styled.div`
 	}
 	@media (max-width: 768px) {
 		padding: 1rem;
+	}
+
+	@media (max-width: 320px) {
+		padding: 0.2rem;
+		justify-content: space-between;
 	}
 `;

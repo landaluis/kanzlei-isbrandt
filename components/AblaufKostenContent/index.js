@@ -103,6 +103,13 @@ const ImageContainer = styled.div`
 	z-index: 2;
 	height: 30rem;
 	width: auto;
+
+	@media (max-width: 320px) {
+		height: 15rem;
+		width: auto;
+		top: 10rem;
+		left: 3rem;
+	}
 `;
 const Content1Title = styled.h1`
 	color: #1a4d61;
@@ -112,6 +119,9 @@ const Content1Title = styled.h1`
 const Content2Title = styled.h1`
 	color: #1a4d61;
 	font-size: 2.5rem;
+
+	@media (max-width: 320px) {
+	}
 `;
 const Content1 = styled.div`
 	font-size: 1.2rem;
@@ -133,6 +143,11 @@ const ContentWrapper = styled.div`
 	margin-right: auto;
 	display: flex;
 	flex-direction: column;
+
+	@media (max-width: 321px) {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
 `;
 
 const SectionContent = styled.div`

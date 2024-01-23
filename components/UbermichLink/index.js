@@ -23,4 +23,8 @@ const Ubermich = styled.button`
 	font-size: 1.1rem;
 	color: #1a4d61;
 	font-family: Ruluko-Regular, sans-serif;
+
+	@media (max-width: 768px) {
+		font-size: 1.5rem;
+	}
 `;

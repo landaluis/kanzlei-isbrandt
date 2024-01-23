@@ -137,27 +137,37 @@ export default function KontaktContent({ currentLanguage }) {
 const TimeContainer1 = styled.div`
 	display: flex;
 	justify-content: space-between;
-	width: auto; /* Adjust the width as needed */
+	width: auto;
 	flex-direction: row;
 	margin-bottom: 1rem;
+
+	@media (max-width: 320px) {
+		flex-direction: column;
+		align-items: center;
+	}
 `;
 const TimeContainer2 = styled.div`
 	display: flex;
 	justify-content: space-between;
-	width: auto; /* Adjust the width as needed */
+	width: auto;
 	flex-direction: row;
+
+	@media (max-width: 320px) {
+		flex-direction: column;
+		align-items: center;
+	}
 `;
 
 const Day = styled.p`
 	display: flex;
 	text-align: left;
-	margin: 0; /* Remove default margin */
+	margin: 0;
 `;
 
 const Hour = styled.p`
 	display: flex;
 	text-align: right;
-	margin: 0; /* Remove default margin */
+	margin: 0;
 `;
 const TitleH2 = styled.h2`
 	color: #1a4d61;
@@ -168,6 +178,11 @@ const TitleH3 = styled.h3`
 const Row = styled.div`
 	display: flex;
 	flex-direction: row;
+
+	@media (max-width: 320px) {
+		flex-direction: column;
+		align-items: center;
+	}
 `;
 const Directions = styled.div``;
 const Offnung = styled.div``;
@@ -175,11 +190,19 @@ const RightSide = styled.div`
 	color: #111827;
 	margin-left: 5rem;
 	line-height: 1.5;
+
+	@media (max-width: 320px) {
+		margin-left: 1rem;
+	}
 `;
 
 const Section1 = styled.div`
 	width: 20rem;
 	padding: none;
+
+	@media (max-width: 320px) {
+		width: 15rem;
+	}
 `;
 const Section2 = styled.div`
 	padding: 1rem 2rem 1rem;
@@ -187,8 +210,6 @@ const Section2 = styled.div`
 
 const KontaktMap = styled.div`
 	color: #111827;
-	// justify-content: space-between;
-	// padding: 2rem;
 	flex-direction: column;
 	display: flex;
 	position: relative;
@@ -196,6 +217,10 @@ const KontaktMap = styled.div`
 	width: 20rem;
 	height: 29rem;
 	margin-top: 3rem;
+
+	@media (max-width: 320px) {
+		width: 15rem;
+	}
 `;
 
 const ImageContainer = styled.div`
@@ -207,21 +232,31 @@ const ImageContainer = styled.div`
 	z-index: 2;
 	height: 30rem;
 	width: auto;
+
+	@media (max-width: 320px) {
+		height: 5rem;
+		width: auto;
+		top: 50rem;
+		left: 0rem;
+	}
 `;
 
 const KontaktContainer = styled.div`
 	padding-top: 130px;
 	color: #7a8387;
 
-	// width: 100%;
 	padding: 8rem 15rem 4rem;
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	// align-items: center;
+
 	justify-content: center;
 
 	color: #7a8387;
+
+	@media (max-width: 320px) {
+		padding: 8rem 1rem 4rem;
+	}
 `;
 
 const KontakTitle = styled.h1`

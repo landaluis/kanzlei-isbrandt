@@ -120,6 +120,11 @@ const ContentBox = styled.div`
 	background-color: rgba(26, 77, 97, 0.2);
 	margin-bottom: 4rem;
 	margin-top: 7rem;
+
+	@media (max-width: 321px) {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
 `;
 
 const ImageContainer = styled.div`
@@ -131,6 +136,13 @@ const ImageContainer = styled.div`
 	z-index: 2;
 	height: 30rem;
 	width: auto;
+
+	@media (max-width: 320px) {
+		height: 15rem;
+		width: auto;
+		top: 10rem;
+		left: 3rem;
+	}
 `;
 
 const ContentWrapper = styled.div`

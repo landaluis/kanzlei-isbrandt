@@ -4,25 +4,25 @@ import { useState, useEffect } from "react";
 import { InlineWidget } from "react-calendly";
 
 export default function TerminBuchenContent({ currentLanguage }) {
-	const [showBanner, setShowBanner] = useState(true);
+	// const [showBanner, setShowBanner] = useState(true);
 
-	useEffect(() => {
-		const isBannerClosed = localStorage.getItem("isBannerClosed");
+	// useEffect(() => {
+	// 	const isBannerClosed = localStorage.getItem("isBannerClosed");
 
-		if (isBannerClosed) {
-			setShowBanner(false);
-		}
-	}, []);
+	// 	if (isBannerClosed) {
+	// 		setShowBanner(false);
+	// 	}
+	// }, []);
 
-	const handleBannerClose = () => {
-		setShowBanner(false);
+	// const handleBannerClose = () => {
+	// 	setShowBanner(false);
 
-		localStorage.setItem("isBannerClosed", "true");
-	};
+	// 	localStorage.setItem("isBannerClosed", "true");
+	// };
 
 	return (
 		<>
-			{showBanner && (
+			{/* {showBanner && (
 				<BannerContainer>
 					<h3>
 						{" "}
@@ -35,7 +35,7 @@ export default function TerminBuchenContent({ currentLanguage }) {
 						: "This website uses cookies. You can adjust your cookie settings under Cookie Settings at the bottom of the booking page."}
 					<CloseButton onClick={handleBannerClose}>X</CloseButton>
 				</BannerContainer>
-			)}
+			)} */}
 			<TerminWrapper>
 				{/* <div className="inline-widget">
 					<InlineWidget url="https://calendly.com/kanzlei-isbrandt" />
@@ -62,24 +62,24 @@ const TerminWrapper = styled.div`
 	}
 `;
 
-const BannerContainer = styled.div`
-	position: fixed;
-	bottom: 2rem;
-	left: 50%;
-	transform: translateX(-50%);
-	// background-color: #08181f;
-	background-color: rgba(8, 24, 31, 0.9);
-	color: #fff;
-	padding: 10px;
-	padding-bottom: 1.5rem;
-	width: 80%;
-	text-align: center;
-	font-family: "Ruluko-Regular";
-`;
+// const BannerContainer = styled.div`
+// 	position: fixed;
+// 	bottom: 2rem;
+// 	left: 50%;
+// 	transform: translateX(-50%);
+// 	// background-color: #08181f;
+// 	background-color: rgba(8, 24, 31, 0.9);
+// 	color: #fff;
+// 	padding: 10px;
+// 	padding-bottom: 1.5rem;
+// 	width: 80%;
+// 	text-align: center;
+// 	font-family: "Ruluko-Regular";
+// `;
 
-const CloseButton = styled.span`
-	position: absolute;
-	top: 5px;
-	right: 10px;
-	cursor: pointer;
-`;
+// const CloseButton = styled.span`
+// 	position: absolute;
+// 	top: 5px;
+// 	right: 10px;
+// 	cursor: pointer;
+// `;

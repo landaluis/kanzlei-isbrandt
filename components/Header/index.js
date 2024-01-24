@@ -40,7 +40,7 @@ const HeaderContainer = styled.div`
 		padding: 1rem;
 	}
 
-	@media (max-width: 320px) {
+	@media (max-width: 375px) {
 		padding: 0.2rem;
 		justify-content: space-between;
 	}

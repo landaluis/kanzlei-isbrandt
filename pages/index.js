@@ -8,6 +8,7 @@ export default function Home({ handleClick, currentLanguage }) {
 			<Header handleClick={handleClick} currentLanguage={currentLanguage} />
 
 			<HomeContent currentLanguage={currentLanguage} />
+
 			<Footer currentLanguage={currentLanguage} />
 		</main>
 	);

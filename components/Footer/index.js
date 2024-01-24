@@ -52,7 +52,7 @@ const ImageContainer = styled.div`
 	height: 10rem;
 	width: auto;
 
-	@media (max-width: 321px) {
+	@media (max-width: 375px) {
 		display: none;
 	}
 `;
@@ -60,7 +60,8 @@ const Section1 = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	@media (max-width: 321px) {
+
+	@media (max-width: 375px) {
 		flex-direction: column;
 	}
 `;
@@ -90,7 +91,7 @@ const FooterContainer = styled.div`
 	margin-left: auto;
 	margin-right: auto;
 
-	@media (max-width: 321px) {
+	@media (max-width: 375px) {
 		padding: 0.5rem;
 	}
 `;
@@ -109,7 +110,7 @@ const List1 = styled(List)`
 	margin-left: 2rem;
 	font-size: 1.35rem;
 
-	@media (max-width: 321px) {
+	@media (max-width: 375px) {
 		padding: 1rem;
 		font-size: 1.1rem;
 		margin-top: 1rem;
@@ -122,7 +123,7 @@ const List2 = styled(List)`
 	border-left: 1px dotted rgba(255, 255, 255, 0.2);
 	border-right: 1px dotted rgba(255, 255, 255, 0.2);
 
-	@media (max-width: 321px) {
+	@media (max-width: 375px) {
 		padding: 1rem;
 		margin-left: 0;
 	}

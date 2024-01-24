@@ -28,12 +28,12 @@ export default function App({ Component, pageProps }) {
 			<Head>
 				<meta name="description" content=" " />
 				<title>Kanzlei Isbrandt</title>
+				<Script
+					id="cookieyes"
+					type="text/javascript"
+					src={`https://cdn-cookieyes.com/client_data/bc513647b0838e740a208ad9/script.js`}
+					strategy="beforeInteractive"></Script>
 			</Head>
-			<Script
-				id="cookieyes"
-				type="text/javascript"
-				src={`https://cdn-cookieyes.com/client_data/bc513647b0838e740a208ad9/script.js`}
-				strategy="beforeInteractive"></Script>
 
 			<Component
 				{...pageProps}

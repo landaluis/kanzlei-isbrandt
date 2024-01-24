@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }) {
 	return (
 		<>
 			<GlobalStyle />
-			<head>
+			<Head>
 				<Script
 					id="cookieyes"
 					type="text/javascript"
@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }) {
 					strategy="beforeInteractive"></Script>
 				<meta name="description" content=" " />
 				<title>Kanzlei Isbrandt</title>
-			</head>
+			</Head>
 
 			<Component
 				{...pageProps}

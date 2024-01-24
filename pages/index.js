@@ -5,19 +5,16 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 
 // Load the CookieYes script dynamically
-const CookiesYesScript = dynamic(
-	() => import("@/components/CookiesYesScript"),
-	{
-		ssr: false, // This ensures the script is not included during server-side rendering
-	}
-);
+const CookieYesScript = dynamic(() => import("@/components/CookieYesScript"), {
+	ssr: false, // This ensures the script is not included during server-side rendering
+});
 
 export default function Home({ handleClick, currentLanguage }) {
 	return (
 		<main>
 			<Head>
 				{/* Add the CookieYes script here */}
-				<CookiesYesScript />
+				<CookieYesScript />
 			</Head>
 			<Header handleClick={handleClick} currentLanguage={currentLanguage} />
 

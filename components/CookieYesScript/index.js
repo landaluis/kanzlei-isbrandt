@@ -1,12 +1,11 @@
 import Script from "next/script";
 
-const CookiesYesScript = () => (
+const CookieYesScript = () => (
 	<Script
 		id="cookieyes"
 		type="text/javascript"
 		src="https://cdn-cookieyes.com/client_data/bc513647b0838e740a208ad9/script.js"
-		strategy="lazyOnload"
 	/>
 );
 
-export default CookiesYesScript;
+export default CookieYesScript;

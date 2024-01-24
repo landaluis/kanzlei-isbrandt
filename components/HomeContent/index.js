@@ -6,25 +6,25 @@ import Link from "next/link";
 import asylum from "../../public/asylum.png";
 import work from "../../public/work.png";
 import euro from "../../public/euro.png";
-import CookieConsent from "react-cookie-consent";
-import { useState, useEffect } from "react";
+// import CookieConsent from "react-cookie-consent";
+// import { useState, useEffect } from "react";
 
 export default function HomeContent({ currentLanguage }) {
-	const [showBanner, setShowBanner] = useState(true);
+	// const [showBanner, setShowBanner] = useState(true);
 
-	useEffect(() => {
-		const isBannerClosed = localStorage.getItem("isBannerClosed");
+	// useEffect(() => {
+	// 	const isBannerClosed = localStorage.getItem("isBannerClosed");
 
-		if (isBannerClosed) {
-			setShowBanner(false);
-		}
-	}, []);
+	// 	if (isBannerClosed) {
+	// 		setShowBanner(false);
+	// 	}
+	// }, []);
 
-	const handleBannerClose = () => {
-		setShowBanner(false);
+	// const handleBannerClose = () => {
+	// 	setShowBanner(false);
 
-		localStorage.setItem("isBannerClosed", "true");
-	};
+	// 	localStorage.setItem("isBannerClosed", "true");
+	// };
 
 	return (
 		<>
@@ -139,7 +139,7 @@ export default function HomeContent({ currentLanguage }) {
 					</Link>
 				</AblaufKostenWrapper>
 			</HomeWrapper>
-			{showBanner && (
+			{/* {showBanner && (
 				<BannerContainer>
 					<h3>
 						{" "}
@@ -152,7 +152,7 @@ export default function HomeContent({ currentLanguage }) {
 						: "This website uses cookies. You can adjust your cookie settings under Cookie Settings at the bottom of the booking page (Booking appointment)."}
 					<CloseButton onClick={handleBannerClose}>X</CloseButton>
 				</BannerContainer>
-			)}
+			)} */}
 			{/* <CookieConsent debug={true}>
 				{currentLanguage === "DE"
 					? "Diese Website verwendet Cookies. Sie können Ihre Cookie-Einstellungen unter Cookie-Einstellungen (Cookie Settings) unten auf der Buchungsseite anpassen."
@@ -308,24 +308,24 @@ const TeaserContent = styled.div`
 	flex-direction: column;
 `;
 
-const BannerContainer = styled.div`
-	position: fixed;
-	bottom: 2rem;
-	left: 50%;
-	transform: translateX(-50%);
-	// background-color: #08181f;
-	background-color: rgba(8, 24, 31, 0.9);
-	color: #fff;
-	padding: 10px;
-	padding-bottom: 1.5rem;
-	width: 80%;
-	text-align: center;
-	font-family: "Ruluko-Regular";
-`;
+// const BannerContainer = styled.div`
+// 	position: fixed;
+// 	bottom: 2rem;
+// 	left: 50%;
+// 	transform: translateX(-50%);
+// 	// background-color: #08181f;
+// 	background-color: rgba(8, 24, 31, 0.9);
+// 	color: #fff;
+// 	padding: 10px;
+// 	padding-bottom: 1.5rem;
+// 	width: 80%;
+// 	text-align: center;
+// 	font-family: "Ruluko-Regular";
+// `;
 
-const CloseButton = styled.span`
-	position: absolute;
-	top: 5px;
-	right: 10px;
-	cursor: pointer;
-`;
+// const CloseButton = styled.span`
+// 	position: absolute;
+// 	top: 5px;
+// 	right: 10px;
+// 	cursor: pointer;
+// `;

@@ -41,12 +41,12 @@ export default function TerminBuchenContent({ currentLanguage }) {
 					<InlineWidget url="https://calendly.com/kanzlei-isbrandt" />
 				</div> */}
 
-				<div className="inline-widget">
+				{/* <div className="inline-widget">
 					<InlineWidget
 						url="https://calendly.com/kanzlei-isbrandt/60min?primary_color=1a4d61"
 						style="min-width:320px;height:1700px;"
 					/>
-				</div>
+				</div> */}
 			</TerminWrapper>
 		</>
 	);

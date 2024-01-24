@@ -1,6 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
-import Script from "next/script";
 
 export default class MyDocument extends Document {
 	static async getInitialProps(ctx) {
@@ -27,15 +26,7 @@ export default class MyDocument extends Document {
 	render() {
 		return (
 			<Html lang="en">
-				<Head>
-					<Script
-						id="cookieyes"
-						type="text/javascript"
-						src={`https://cdn-cookieyes.com/client_data/bc513647b0838e740a208ad9/script.js`}
-						strategy="beforeInteractive">
-						console.log("here")
-					</Script>
-				</Head>
+				<Head></Head>
 				<body>
 					<Main />
 					<NextScript />

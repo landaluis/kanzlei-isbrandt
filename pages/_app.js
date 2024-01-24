@@ -25,15 +25,15 @@ export default function App({ Component, pageProps }) {
 	return (
 		<>
 			<GlobalStyle />
-			<head>
-				<Script
-					id="cookieyes"
-					type="text/javascript"
-					src={`https://cdn-cookieyes.com/client_data/bc513647b0838e740a208ad9/script.js`}
-					strategy="beforeInteractive"></Script>
+			<Head>
 				<meta name="description" content=" " />
 				<title>Kanzlei Isbrandt</title>
-			</head>
+			</Head>
+			<Script
+				id="cookieyes"
+				type="text/javascript"
+				src={`https://cdn-cookieyes.com/client_data/bc513647b0838e740a208ad9/script.js`}
+				strategy="beforeInteractive"></Script>
 
 			<Component
 				{...pageProps}

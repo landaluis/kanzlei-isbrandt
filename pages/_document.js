@@ -29,6 +29,8 @@ export default class MyDocument extends Document {
 			<Html lang="en">
 				<Head>
 					<Script
+						id="cookieyes"
+						type="text/javascript"
 						src={`https://cdn-cookieyes.com/client_data/bc513647b0838e740a208ad9/script.js`}
 						strategy="beforeInteractive">
 						console.log("here")

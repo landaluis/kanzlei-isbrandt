@@ -4,6 +4,7 @@ import ImpressumLink from "../ImpressumLink";
 import LogoKI from "../../public/LogoKI.png";
 import Image from "next/image";
 import KontaktLinkFooter from "../KontaktLinkFooter";
+import DatenschutzLink from "../DatenschutzLink";
 
 export default function Footer({ currentLanguage }) {
 	return (
@@ -22,6 +23,9 @@ export default function Footer({ currentLanguage }) {
 						</ListItem>
 						<ListItem>
 							<KontaktLinkFooter currentLanguage={currentLanguage} />
+						</ListItem>
+						<ListItem>
+							<DatenschutzLink currentLanguage={currentLanguage} />
 						</ListItem>
 					</List2>
 					<ImageContainer>
@@ -43,7 +47,7 @@ export default function Footer({ currentLanguage }) {
 	);
 }
 const ImageContainer = styled.div`
-	position: relative;
+	position: relative	
 	top: 0.5rem;
 	left: 0rem;
 	opacity: 1;
@@ -52,18 +56,31 @@ const ImageContainer = styled.div`
 	height: 10rem;
 	width: auto;
 
-	@media (max-width: 375px) {
+	@media (max-width: 1024px) {
 		display: none;
 	}
+
+	@media (max-width: 768px) {
+		display: none;
+	}
+
+	// @media (max-width: 375px) {
+	// 	display: none;
+	// }
 `;
 const Section1 = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 
-	@media (max-width: 375px) {
+	@media (max-width: 600px) {
 		flex-direction: column;
+		align-items: center;
 	}
+
+	// @media (max-width: 375px) {
+	// 	flex-direction: column;
+	// }
 `;
 const Section2 = styled.div``;
 const Copyright = styled.div`
@@ -79,9 +96,7 @@ const FooterContainer = styled.div`
 	background-color: #08181f;
 	flex-direction: column;
 	display: flex;
-	padding: 3rem;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding: 2rem 3rem 2rem;
 	text-align: center;
 	bottom: 0;
 	width: 100%;
@@ -91,9 +106,13 @@ const FooterContainer = styled.div`
 	margin-left: auto;
 	margin-right: auto;
 
-	@media (max-width: 375px) {
-		padding: 0.5rem;
+	@media (max-width: 768px) {
+		padding: 2rem 0rem 2rem;
 	}
+
+	// @media (max-width: 375px) {
+	// 	padding: 0.5rem;
+	// }
 `;
 
 const List = styled.ul`
@@ -114,6 +133,7 @@ const List1 = styled(List)`
 		padding: 1rem;
 		font-size: 1.1rem;
 		margin-top: 1rem;
+		margin-left: 0rem;
 	}
 `;
 
@@ -123,10 +143,23 @@ const List2 = styled(List)`
 	border-left: 1px dotted rgba(255, 255, 255, 0.2);
 	border-right: 1px dotted rgba(255, 255, 255, 0.2);
 
-	@media (max-width: 375px) {
+	@media (max-width: 768px) {
+		margin-left: 0;
+	}
+
+	@media (max-width: 600px) {
+		margin-top: 1rem;
+	}
+
+	@media (max-width: 425px) {
 		padding: 1rem;
 		margin-left: 0;
 	}
+
+	// @media (max-width: 375px) {
+	// 	padding: 1rem;
+	// 	margin-left: 0;
+	// }
 `;
 
 const ListItem = styled.li`

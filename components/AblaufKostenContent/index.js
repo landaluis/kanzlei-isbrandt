@@ -6,10 +6,12 @@ import Watermark from "../../public/Watermark.png";
 export default function AblaufKostenContent({ currentLanguage }) {
 	return (
 		<>
-			<AblaufKostenTitle>
-				{currentLanguage === "DE" ? "Ablauf und Kosten" : "Procedure and Cost"}
-			</AblaufKostenTitle>
 			<SectionContent>
+				<AblaufKostenTitle>
+					{currentLanguage === "DE"
+						? "Ablauf und Kosten"
+						: "Procedure and Cost"}
+				</AblaufKostenTitle>
 				<ContentWrapper>
 					<ContentBox>
 						<Content2>
@@ -17,26 +19,26 @@ export default function AblaufKostenContent({ currentLanguage }) {
 								{currentLanguage === "DE" ? "Ablauf" : "Procedure"}
 							</Content2Title>
 							{currentLanguage === "DE"
-								? "	Eine Erstberatung buchen Sie bitte unter dem Punkt &quot;Online Termin buchen&quot;. Wahlweise können Sie einen Termin auch per E-Mail oder über das Kontaktformular anfragen. In Ihrer Anfrage schildern Sie bitte Ihren Fall und Ihre Erwartungen."
-								: "Please schedule an initial consultation under the &quot;Book Online Appointment&quot; section. Alternatively, you can also request an appointment via email or through the contact form. In your inquiry, kindly describe your case and expectations."}{" "}
+								? "Eine Erstberatung buchen Sie bitte unter dem Punkt 'Online Termin buchen'. Wahlweise können Sie einen Termin auch per E-Mail anfragen. In Ihrer Anfrage schildern Sie bitte ausführlich Ihren Fall und fügen die erforderlichen Unterlagen als PDF- Datei bei.	"
+								: "To schedule an initial consultation, please use the 'Book Online Appointment' section. Alternatively, you can request an appointment via email or through the contact form. In your inquiry, please provide a detailed description of your case and attach the necessary documents in PDF format."}{" "}
 							<br />
 							<br />{" "}
 							{currentLanguage === "DE"
-								? "Die erforderlichen Unterlagen schicken Sie mir bitte im Vorfeld sortiert als PDF- Datei zu, damit ich mich optimal auf Ihren Termin vorbereiten kann. Sofern Sie über keinen Scanner verfügen, nutzen Sie bitte eine Scan-App oder bringen die Unterlagen spätestens zum Beratungsgespräch mit."
-								: "Please send the necessary documents to me in advance, organized as a PDF file, so that I can adequately prepare for your appointment. If you do not have access to a scanner, please use a scanning app or bring the documents to the consultation at the latest."}{" "}
+								? "Die erforderlichen Unterlagen sind spätestens zur Erstberatung mitzubringen, da mir ansonsten eine umfassende Beratung nicht möglich ist."
+								: "The required documents must be brought at the latest to the initial consultation, as otherwise, comprehensive advice may not be possible."}{" "}
 							<br></br> <br></br>
 							{currentLanguage === "DE"
-								? "	Im Beratungsgespräch gehen wir gemeinsam alle wichtigen Fragen durch und erörtern die konkreten Erfolgsaussichten anhand der vorliegenden Informationen und eingereichten Unterlagen. Sie werden über die rechtlichen Aspekte des Falles aufgeklärt und das weitere Vorgehen wird besprochen."
-								: "During the consultation, we will go through all essential questions together and discuss the specific chances of success based on the provided information and submitted documents. You will be informed about the legal aspects of the case, and the next steps will be discussed."}
+								? "Während des Beratungsgesprächs werden Ihre Fragen erörtert. Zusammen besprechen wir die konkreten Erfolgsaussichten anhand der vorliegenden Informationen und eingereichten Unterlagen sowie das weitere Vorgehen. Zusätzlich werden die im Rahmen der weiteren Beauftragung entstehenden Kosten erörtert."
+								: "During the consultation, we will discuss your questions. Together, we will review the specific prospects of success based on the information and documents provided, as well as discuss the next steps. Additionally, the costs associated with further engagement will be discussed."}
 							<br></br>
 							<br></br>{" "}
 							{currentLanguage === "DE"
-								? "Während der Erstberatung werden bei Bedarf auch die im Rahmen der weiteren Beauftragung entstehenden Kosten erörtert."
-								: "If necessary, the costs associated with further engagement will also be discussed during the initial consultation."}{" "}
+								? "Nach erfolgter Erstberatung können Sie mich für die Durchsetzung Ihrer Rechte beauftragen. Sollte keine Beauftragung erfolgen, beispielsweise weil die Erstberatung schon zu einem zufriedenstellenden Ergebnis führte, sind selbstverständlich die Kosten der Erstberatung von Ihnen zu tragen. "
+								: "After the initial consultation, you can commission me to enforce your rights. If no engagement takes place, for example, because the initial consultation already led to a satisfactory result, the costs of the initial consultation are naturally your responsibility."}{" "}
 							<br></br> <br></br>
 							{currentLanguage === "DE"
-								? "Ich weise daraufhin, dass meine Kanzlei vollständig digital arbeitet. Diese unkomplizierte und direkte Kommunikation ermöglicht schnelle Reaktionsmöglichkeiten und kommt Ihnen als Mandant unmittelbar zugute. Aus diesem Grund darf ich Sie bitten, Unterlagen in sortierter PDF-Datei an meine E-Mail-Adresse zu übersenden."
-								: "I would like to emphasize that my law firm operates entirely digitally. This straightforward and direct communication enables quick response times, directly benefiting you as the client. For this reason, I kindly request you to send documents in an organized PDF file to my email address."}{" "}
+								? "Ich möchte zusätzlich darauf hinweisen, dass meine Kanzlei vollständig digital arbeitet. Aufgrund dessen darf ich Sie bitten, mir Ihre Unterlagen vollständig und in sortierter Form als PDF- Datei zu übersenden. Scan-Apps für Smartphones sind kostenfrei downloadbar. Die digitale Übersendung Ihrer Unterlagen hat für Sie den Vorteil, dass ich hierauf schnell reagieren kann und kommt Ihnen daher auch unmittelbar zugute. "
+								: "I would like to emphasize that my law firm operates entirely digitally. Therefore, I kindly ask you to send me your documents in a complete and organized manner as a PDF file. Scan apps for smartphones are available for free download. The digital submission of your documents has the advantage that I can respond quickly, which is immediately beneficial to you."}{" "}
 							<br></br> <br></br>
 						</Content2>
 					</ContentBox>
@@ -46,30 +48,31 @@ export default function AblaufKostenContent({ currentLanguage }) {
 								{currentLanguage === "DE" ? "Kosten" : "Cost"}
 							</Content1Title>
 							{currentLanguage === "DE"
-								? "Eine effektive Vertretung in migrationsrechtlichen sowie arbeitsrechtlichen Verfahren erfordert ein Vertrauensverhältnis zwischen Mandant*innen und Rechtsanwältin. Die Beauftragung einer Rechtsanwältin ist mit Kosten verbunden. Daher ist es mir wichtig, dass von Anfang an über die entstehenden Kosten und Gebühren transparent aufgeklärt wird."
-								: "Effective representation in immigration and employment law proceedings requires a trustful relationship between the client and the attorney. Engaging an attorney naturally comes with costs. Therefore, it is important to me that you are transparently informed about the arising costs and fees right from the beginning."}
+								? "Die rechtliche Vertretung erfordert ein Vertrauensverhältnis zwischen Mandant*innen und Rechtsanwältin. Dieses Vertrauensverhältnis betrifft auch die Vergütung der in Anspruch genommenen Dienstleistung. Die Beauftragung einer Rechtsanwältin ist selbstverständlich mit Kosten verbunden. Da Mandanten, die erstmalig eine Rechtsberatung in Anspruch nehmen, oftmals über die Kosten verunsichert sind, möchte ich nachfolgend über die entstehenden Kosten und Gebühren aufklären."
+								: "Legal representation requires a relationship of trust between clients and the attorney. This trust extends to the compensation for the services provided. Engaging an attorney naturally involves costs. As clients seeking legal advice for the first time may often be uncertain about the expenses involved, I would like to provide information on the incurred costs and fees below."}
 							<br></br>
 							<br></br>
 							{currentLanguage === "DE"
-								? "Die Höhe der Kosten richtet sich insbesondere nach dem Umfang, der Schwierigkeit und der Instanz des Verfahrens."
-								: "The amount of costs depends particularly on the scope, difficulty, and stage of the proceedings. "}
+								? "Die erste Kontaktaufnahme per E-Mail, Online-Formular bzw. Telefon ist natürlich kostenlos. Die Erstberatung hingegen ist mit Kosten verbunden. Bezüglich der Höhe der Kosten kann im Vorfeld eine gesonderte Vereinbarung getroffen werden."
+								: "The initial contact via email, contact form, or telephone is, of course, free of charge. However, the initial consultation incurs costs. Regarding the amount of the costs, a separate agreement can be made in advance."}
 							<br></br> <br></br>
 							{currentLanguage === "DE"
-								? "Die Abrechnung der Anwaltsgebühren kann entweder nach den gesetzlichen Gebühren (RVG) oder nach einer individuellen Honorarvereinbarung erfolgen. Eine solche Honorarvereinbarung kann entweder ein Stunden- oder Pauschalhonorar vorsehen. Das RVG hingegen sieht Pauschalsätze vor, die sich nach dem jeweiligen Streit- bzw. Gegenstandswert richten."
-								: "Billing for attorney fees can either be based on statutory fees (RVG) or on an individual fee agreement. Such a fee agreement may stipulate either an hourly or flat fee. The RVG, on the other hand, provides for fixed rates that are based on the respective value in dispute or the subject matter."}
+								? "Nach erfolgter Erstberatung und Mandatsannahme ist ein Kostenvorschuss zu leisten, dessen Höhe wir individuell vereinbaren können. Nach Annahme des Mandats sind Ratenzahlungen möglich. Sprechen Sie mich diesbezüglich gerne in Ihrer Kontaktanfrage an!"
+								: "Upon acceptance of the mandate after the initial consultation, an advance payment is required, the amount of which can be individually agreed upon. After accepting the mandate, installment payments are possible. Feel free to address this in your contact inquiry!"}
 							<br></br>
 							<br></br>{" "}
 							{currentLanguage === "DE"
-								? "Bei der Mandatsannahme ist ein Kostenvorschuss zu leisten, dessen Höhe wir individuell vereinbaren können. Nach Annahme des Mandats sind Ratenzahlungen möglich. Sprechen Sie mich diesbezüglich gerne bei Ihrer Kontaktanfrage an!"
-								: "A cost advance is required upon accepting the mandate, the amount of which can be individually agreed upon. After accepting the mandate, installment payments are possible. Feel free to address this in your contact request (online booking or via email)."}{" "}
+								? "Die Höhe der Kosten des übernommenen Verfahrens richtet sich insbesondere nach dem Umfang, der Schwierigkeit und der Instanz des Verfahrens. Die Abrechnung der Anwaltsgebühren kann entweder nach den gesetzlichen Gebühren (RVG) oder nach einer individuellen Honorarvereinbarung erfolgen. Eine solche Honorarvereinbarung kann entweder ein Stunden- oder Pauschalhonorar vorsehen. Das RVG hingegen sieht Pauschalsätze vor, die sich nach dem jeweiligen Streit- bzw. Gegenstandswert richten."
+								: "The amount of costs for the undertaken proceedings depends particularly on the scope, complexity, and instance of the case. Attorney fees can be billed either according to statutory fees (RVG) or through an individual fee arrangement. Such a fee arrangement can provide for either hourly or flat-rate fees. The RVG, on the other hand, specifies lump-sum rates based on the respective dispute or object value."}{" "}
 							<br></br> <br></br>
 							{currentLanguage === "DE"
-								? "Für Mandanten mit geringem Einkommen besteht die Möglichkeit, bei den Amtsgerichten Beratungshilfe zu beantragen. Bitte beantragen Sie vor der Beratung den Beratungshilfeschein beim zuständigen Amtsgericht und bringen Sie diesen zur Beratung mit. Nach der erfolgten Beratung können zusätzlich 15 Euro in Rechnung gestellt werden. "
-								: "For clients with low income, there is the option to apply for legal aid at the local courts. Please apply for the legal aid certificate from the relevant local court before the consultation and bring it with you. After the consultation, an additional fee of 15 euros may be charged."}
+								? "Für Mandanten mit geringem Einkommen besteht die Möglichkeit, bei den Amtsgerichten Beratungshilfe zu beantragen. Bitte beantragen Sie vor der Beratung den Beratungshilfeschein beim zuständigen Amtsgericht und bringen Sie diesen zur Beratung mit. Nach der erfolgten Beratung können zusätzlich 15 Euro in Rechnung gestellt werden."
+								: "Clients with low income have the option to apply for legal aid at the district courts. Please apply for the legal aid certificate from the relevant district court before the consultation and bring it with you. After the consultation, an additional fee of 15 euros can be charged."}
 							<br></br> <br></br>
 							{currentLanguage === "DE"
 								? "Im Falle eines gerichtlichen Verfahrens können Mandant*innen mit geringem Einkommen Prozesskostenhilfe beantragen, durch die die Prozesskosten durch die Staatskasse erstattet werden."
-								: "In the case of legal proceedings, clients with low income can apply for legal aid, through which the litigation costs are reimbursed by the state treasury."}
+								: "In the case of a judicial proceeding, clients with low income can apply for legal aid, whereby the court costs are reimbursed by the state treasury."}
+							<br></br> <br></br>
 						</Content1>
 					</ContentBox>
 				</ContentWrapper>
@@ -96,18 +99,30 @@ const ContentBox = styled.div`
 
 const ImageContainer = styled.div`
 	position: absolute;
-	top: 0rem;
-	left: 49rem;
+	top: 7rem;
+	left: 32rem;
 	opacity: 0.2;
 	pointer-events: none;
 	z-index: 2;
 	height: 30rem;
 	width: auto;
 
-	@media (max-width: 320px) {
-		height: 15rem;
-		width: auto;
+	@media (max-width: 1024px) {
+		left: 27rem;
+	}
+
+	@media (max-width: 900px) {
+		left: 10rem;
+	}
+	@media (max-width: 700px) {
+		left: 19rem;
+	}
+
+	@media (max-width: 650px) {
+		left: 8rem;
 		top: 10rem;
+	}
+	@media (max-width: 400px) {
 		left: 3rem;
 	}
 `;
@@ -115,10 +130,12 @@ const Content1Title = styled.h1`
 	color: #1a4d61;
 	font-size: 2.5rem;
 	margin-top: 0;
+	font-family: "Ruluko-Regular";
 `;
 const Content2Title = styled.h1`
 	color: #1a4d61;
 	font-size: 2.5rem;
+	font-family: "Ruluko-Regular";
 
 	@media (max-width: 320px) {
 	}
@@ -128,6 +145,8 @@ const Content1 = styled.div`
 	margin-top: 2rem;
 	color: #333;
 	line-height: 1.5;
+
+	font-family: "FiraSans-Regular";
 `;
 const Content2 = styled.div`
 	font-size: 1.2rem;
@@ -135,6 +154,7 @@ const Content2 = styled.div`
 	color: #333;
 	line-height: 1.5;
 	margin-bottom: 0rem;
+	font-family: "FiraSans-Regular";
 `;
 const ContentWrapper = styled.div`
 	max-width: 800px;
@@ -152,7 +172,27 @@ const ContentWrapper = styled.div`
 
 const SectionContent = styled.div`
 	position: relative;
-	width: 100%;
+
+	overflow: hidden;
+	margin: 6rem 7rem 2rem;
+
+	@media (max-width: 1024px) {
+		margin: 10rem 7rem 2rem;
+	}
+
+	@media (max-width: 900px) {
+		margin: 9rem 6rem 2rem;
+	}
+
+	@media (max-width: 700px) {
+		margin: 9rem 3rem 2rem;
+	}
+	@media (max-width: 500px) {
+		margin: 9rem 2rem 2rem;
+	}
+	@media (max-width: 321px) {
+		margin: 9rem 1rem 2rem;
+	}
 `;
 
 const AblaufKostenTitle = styled.h1`
@@ -160,6 +200,6 @@ const AblaufKostenTitle = styled.h1`
 	color: #1a4d61;
 	padding: 10px;
 	text-align: center;
-	margin-top: 9rem;
+	margin-top: 2rem;
 	margin-bottom: 2rem;
 `;

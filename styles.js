@@ -19,4 +19,18 @@ export default createGlobalStyle`
     font-style: normal;
     font-display: swap;
   }
+  @font-face {
+    font-family: 'FiraSans-Regular';
+    src: url('/FiraSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'FiraSans-Light';
+    src: url('/FiraSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
 `;

@@ -2,37 +2,51 @@ import React from "react";
 import styled from "styled-components";
 import Watermark from "../../public/Watermark.png";
 import Image from "next/image";
+import Übermich from "../../public/Übermich.jpg";
 
 export default function UbermichContent({ currentLanguage }) {
 	return (
 		<>
 			<ContentBox>
 				<Title>{currentLanguage === "DE" ? "Über mich" : "About me"}</Title>
+
 				<SectionContent>
+					{" "}
 					<ContentWrapper>
 						<Content>
+							<ImageContainer2>
+								<Image
+									src={Übermich}
+									alt="CI Photo"
+									style={{
+										height: "100%",
+										width: "auto",
+										maxWidth: "100%",
+									}}
+								/>
+							</ImageContainer2>
 							<p>
 								{currentLanguage === "DE"
-									? "Nach meiner Schullaufbahn studierte ich Rechtswissenschaften an der Universität Bielefeld. Bereits dort legte ich meinen Schwerpunkt auf das Migrationsrecht und belegte den Schwerpunkt &quot;Einwanderung und soziale Integration&quot;."
-									: "After completing my school education, I pursued legal studies at the University of Bielefeld. During my time there, I focused on immigration law and chose the specialization &quot;Immigration and Social Integration.&quot; "}
+									? "Ich studierte Rechtswissenschaften an der Universität Bielefeld. Bereits dort legte ich meinen Interessensschwerpunkt auf das Migrationsrecht und belegte den Schwerpunktbereich 'Einwanderung und soziale Integration'."
+									: "I studied law at the University of Bielefeld. Already there, I focused my interests on migration law and chose the specialization 'Immigration and Social Integration.' "}
 							</p>
 
 							<p>
 								{currentLanguage === "DE"
-									? "Nach dem Ersten Staatsexamen absolvierte ich das Referendariat am Landgericht Bielefeld, wobei ich auch hier dem Migrationsrecht Priorität einräumte und meine Anwalts- sowie Wahlstation in einer auf Migrationsrecht spezialisierten Kanzlei absolvierte."
-									: "Following the First State Examination, I undertook the legal clerkship at the Bielefeld Regional Court, where I continued to prioritize immigration law. I completed my legal traineeship, including my internship and elective stage, in a law firm specializing in migration law."}
+									? "Nach dem Ersten Staatsexamen absolvierte ich das Referendariat am Landgericht Bielefeld. Meine Anwalts – sowie Wahlstation absolvierte ich in einer auf Migrationsrecht spezialisierten Kanzlei."
+									: "After completing the First State Examination, I undertook my legal clerkship at the District Court in Bielefeld. I completed my internship and elective clerkship at a law firm specializing in migration law."}
 							</p>
 
 							<p>
 								{currentLanguage === "DE"
 									? "Nach meinem Zweiten Staatsexamen und der Zulassung zur Anwaltschaft habe ich zunächst zweieinhalb Jahre als angestellte Rechtsanwältin in einer renommierten Kanzlei für Migrations- und Sozialrecht in Bielefeld gearbeitet."
-									: "Upon completing my second State Examination and obtaining admission to the bar, I initially worked as an employed attorney for two and a half years at a renowned firm specializing in migration and social law in Bielefeld."}
+									: "Following my Second State Examination and admission to the bar, I initially worked as an employed lawyer for two and a half years at a renowned law firm specializing in migration and social law in Bielefeld."}
 							</p>
 
 							<p>
 								{currentLanguage === "DE"
 									? "Meine Rechtsanwaltskanzlei wurde im Jahr 2024 gegründet. In meiner Kanzlei biete ich neben dem Rechtsgebiet Migrationsrecht auch das Rechtsgebiet Arbeitsrecht an."
-									: "I established my own law firm in 2024, where, in addition to immigration law, I also practice labor law."}
+									: "I established my own law firm in the year 2024. In addition to specializing in migration law, my practice also covers the field of labor law."}
 							</p>
 
 							<p>
@@ -75,17 +89,17 @@ export default function UbermichContent({ currentLanguage }) {
 
 							<p>
 								{currentLanguage === "DE"
-									? "Da mir der Austausch unter jungen Anwält*innen und Berufsanfänger*innen wichtig ist, bin ich seit August 2023 Regionalbeauftragte für das FORUM Junge Anwaltschaft im Landgerichtsbezirk Bielefeld."
-									: "Since August 2023, I have been serving as the Regional Representative for the FORUM Young Lawyers in the Bielefeld Regional Court district, as I consider the exchange among young lawyers and beginners in the field crucial. "}{" "}
+									? "Da mir der Austausch unter jungen Anwält*innen und Berufsanfänger*innen wichtig ist, bin ich seit August 2023 Regionalbeauftragte für das FORUM Junge Anwaltschaft im Landgerichtsbezirk Bielefeld. "
+									: " Since August 2023, I have been serving as the Regional Representative for the FORUM Young Lawyers in the Bielefeld Regional Court district, as I consider the exchange among young lawyers and beginners in the field crucial. "}{" "}
 							</p>
 							<p>
 								{currentLanguage === "DE"
-									? "Zudem bin ich für die Karin und Walter Blüchert Gedächtnisstiftung mit Sitz in Hamburg als wissenschaftliche Mitarbeiterin in dem Projekt &quot;Soziales Entschädigungsrecht&quot; ehrenamtlich tätig."
-									: "Additionally, I volunteer as a research assistant in the project &quot;Social Compensation Law&quot; for the Karin and Walter Blüchert Memorial Foundation based in Hamburg."}
+									? "Zudem bin ich für die Karin und Walter Blüchert Gedächtnisstiftung mit Sitz in Hamburg als wissenschaftliche Mitarbeiterin in dem Projekt 'Soziales Entschädigungsrecht' ehrenamtlich tätig."
+									: "Additionally, I volunteer as a research assistant in the project 'Social Compensation Law' for the Karin and Walter Blüchert Memorial Foundation based in Hamburg."}
 							</p>
 						</Content>
 					</ContentWrapper>
-					<ImageContainer>
+					{/* <ImageContainer>
 						<Image
 							src={Watermark}
 							alt="KI Logo"
@@ -94,43 +108,106 @@ export default function UbermichContent({ currentLanguage }) {
 								width: "auto",
 							}}
 						/>
-					</ImageContainer>
+					</ImageContainer> */}
 				</SectionContent>
 			</ContentBox>
 		</>
 	);
 }
 
+const ImageContainer2 = styled.div`
+	position: relative;
+	z-index: 2;
+	height: 30rem;
+	width: auto;
+	float: left;
+	margin-top: 1.2rem;
+	padding-right: 2rem;
+	max-width: 100%;
+
+	@media (max-width: 800px) {
+		text-align: center;
+		margin: 0 auto;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		padding-right: 0;
+		margin-bottom: 3rem;
+	}
+
+	@media (max-width: 375px) {
+		width: auto;
+		height: 20rem;
+		// height: 10rem;
+	}
+`;
 const Content = styled.div`
 	font-size: 1.2rem;
 	margin-top: 2rem;
 	color: #333;
 	line-height: 1.5;
 	text-align: justify;
+	margin-left: 2rem;
+	font-family: "FiraSans-Regular";
+
+	@media (max-width: 900px) {
+		margin-left: 0rem;
+	}
+
+	@media (max-width: 800px) {
+		margin: 0 auto; /* Center the container horizontally */
+		// text-align: center; /* Center the child elements */
+		float: none;
+	}
 `;
 
 const SectionContent = styled.div`
 	position: relative;
 	width: 100%;
+	flex: 1;
+	// overflow: hidden;
 `;
 
 const ContentBox = styled.div`
 	padding: 2rem;
 	border-radius: 10px;
 	background-color: rgba(26, 77, 97, 0.2);
-	margin-bottom: 4rem;
-	margin-top: 7rem;
+	// margin: 8rem 2rem 4rem;
+	margin: 9rem 10rem 2rem;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
+	// @media (max-width: 321px) {
+	// 	margin-left: 1rem;
+	// 	margin-right: 1rem;
+	// }
+
+	@media (max-width: 1024px) {
+		margin: 11rem 7rem 2rem;
+	}
+
+	@media (max-width: 900px) {
+		margin: 11rem 5rem 2rem;
+	}
+
+	@media (max-width: 700px) {
+		margin: 11rem 3rem 2rem;
+	}
+	@media (max-width: 500px) {
+		margin: 11rem 2rem 2rem;
+		padding: 1rem;
+	}
 	@media (max-width: 321px) {
-		margin-left: 1rem;
-		margin-right: 1rem;
+		margin: 9rem 1rem 2rem;
 	}
 `;
 
 const ImageContainer = styled.div`
 	position: absolute;
-	top: -7rem;
-	left: 49rem;
+	top: 0rem;
+	left: 46rem;
 	opacity: 0.2;
 	pointer-events: none;
 	z-index: 2;

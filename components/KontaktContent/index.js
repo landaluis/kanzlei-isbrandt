@@ -39,8 +39,9 @@ export default function KontaktContent({ currentLanguage }) {
 							</p>
 							<p>
 								E-Mail: info@kanzlei-isbrandt.de <br />
-								Tel: <br />
-								Fax:{" "}
+								Tel: 0521 44813645
+								<br />
+								Fax: 0521 44813646{" "}
 							</p>
 						</Section2>
 					</KontaktMap>
@@ -140,6 +141,9 @@ const TimeContainer1 = styled.div`
 	width: auto;
 	flex-direction: row;
 	margin-bottom: 1rem;
+	// @media (max-width: 800px) {
+	// 	justify-content: space-around;
+	// }
 
 	@media (max-width: 320px) {
 		flex-direction: column;
@@ -151,6 +155,10 @@ const TimeContainer2 = styled.div`
 	justify-content: space-between;
 	width: auto;
 	flex-direction: row;
+
+	// @media (max-width: 800px) {
+	// 	justify-content: space-around;
+	// }
 
 	@media (max-width: 320px) {
 		flex-direction: column;
@@ -171,25 +179,34 @@ const Hour = styled.p`
 `;
 const TitleH2 = styled.h2`
 	color: #1a4d61;
+	font-family: "Ruluko-Regular";
 `;
 const TitleH3 = styled.h3`
 	color: #1a4d61;
+	font-family: "Ruluko-Regular";
 `;
 const Row = styled.div`
 	display: flex;
 	flex-direction: row;
 
-	@media (max-width: 320px) {
+	@media (max-width: 960px) {
 		flex-direction: column;
 		align-items: center;
 	}
 `;
-const Directions = styled.div``;
-const Offnung = styled.div``;
+const Directions = styled.div`
+	font-family: "FiraSans-Regular";
+`;
+const Offnung = styled.div`
+	font-family: "FiraSans-Regular";
+`;
 const RightSide = styled.div`
 	color: #111827;
 	margin-left: 5rem;
 	line-height: 1.5;
+	@media (max-width: 960px) {
+		margin-left: 0;
+	}
 
 	@media (max-width: 320px) {
 		margin-left: 1rem;
@@ -215,9 +232,14 @@ const KontaktMap = styled.div`
 	position: relative;
 	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
 	width: 20rem;
-	height: 29rem;
+	height: 31rem;
 	margin-top: 3rem;
+	font-family: "FiraSans-Regular";
+	line-height: 1.5;
 
+	@media (max-width: 9600px) {
+		margin-bottom: 3rem;
+	}
 	@media (max-width: 320px) {
 		width: 15rem;
 	}
@@ -244,6 +266,7 @@ const ImageContainer = styled.div`
 const KontaktContainer = styled.div`
 	padding-top: 130px;
 	color: #7a8387;
+	overflow: hidden;
 
 	padding: 8rem 15rem 4rem;
 	position: relative;
@@ -254,8 +277,30 @@ const KontaktContainer = styled.div`
 
 	color: #7a8387;
 
-	@media (max-width: 320px) {
+	@media (max-width: 1350px) {
+		padding: 8rem 10rem 4rem;
+	}
+
+	@media (max-width: 1200px) {
+		padding: 8rem 8rem 4rem;
+	}
+
+	@media (max-width: 1100px) {
+		padding: 8rem 6rem 4rem;
+	}
+
+	@media (max-width: 800px) {
+		margin-top: 3rem;
+		padding: 8rem 6rem 4rem;
+	}
+
+	@media (max-width: 600px) {
+		padding: 8rem 3rem 4rem;
+	}
+
+	@media (max-width: 400px) {
 		padding: 8rem 1rem 4rem;
+		margin-top: 0rem;
 	}
 `;
 
@@ -263,4 +308,8 @@ const KontakTitle = styled.h1`
 	font-size: 3rem;
 	color: #1a4d61;
 	margin-bottom: 1rem;
+
+	@media (max-width: 9600px) {
+		align-self: center;
+	}
 `;

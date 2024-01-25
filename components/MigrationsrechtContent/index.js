@@ -26,12 +26,12 @@ export default function MigrationsrechtContent({ currentLanguage }) {
 					<ContentWrapper>
 						<Content1>
 							{currentLanguage === "DE"
-								? "Das Migrationsrecht ist wie kaum ein anderes Rechtsgebiet stark von der aktuellen politischen Stimmung geprägt und unterliegt ständigen Veränderungen. In den letzten Jahren haben zahlreiche Gesetzesänderungen zu einer Einschränkung grundlegender Verfahrensrechte von Schutzsuchenden geführt. Daher erfordert die Arbeit in diesem Bereich eine fortwährende Auseinandersetzung mit der Frage, wie durch anwaltliches Engagement Verfahrensrechte erneut gewonnen werden können."
+								? "Das Migrationsrecht ist wie kaum ein anderes Rechtsgebiet stark von der aktuellen politischen Stimmung geprägt und unterliegt ständigen Veränderungen. In den letzten Jahren haben zahlreiche Gesetzesänderungen zu einer Einschränkung grundlegender (Verfahrens-)rechte von Schutzsuchenden und Migrant*innen geführt. Daher erfordert die Arbeit in diesem Bereich eine fortwährende Auseinandersetzung mit der Frage, wie durch anwaltliches Engagement (Verfahrens-)rechte zurückgewonnen werden können."
 								: "Immigration law, more than almost any other legal field, is heavily influenced by the current political climate and is subject to constant changes. In recent years, numerous legislative amendments have led to a restriction of fundamental procedural rights for those seeking protection. Therefore, working in this area requires a continual engagement with the question of how procedural rights can be regained through legal advocacy."}
 							<br />
 							<br />
 							{currentLanguage === "DE"
-								? "	Ich begleite Sie als Rechtsanwältin durch das gesamte Asylverfahren."
+								? "Ich begleite Sie als Rechtsanwältin durch das gesamte Asylverfahren.	"
 								: "As an attorney, I guide you through the entire asylum process. "}
 							<br />
 							<br />
@@ -41,7 +41,7 @@ export default function MigrationsrechtContent({ currentLanguage }) {
 							<br />
 							<br />
 							{currentLanguage === "DE"
-								? "	Zudem befasse ich mich auch mit der Frage der Verfestigung des Aufenthaltsstatus. Dies betrifft insbesondere die Erteilung einer Niederlassungserlaubnis (einen zeitlich unbefristeten Aufenthaltstitel) oder die Erlangung der deutschen Staatsangehörigkeit."
+								? "Zudem befasse ich mich auch mit der Frage der Verfestigung des Aufenthaltsstatus. Dies betrifft insbesondere die Erteilung einer Niederlassungserlaubnis (einen zeitlich unbefristeten Aufenthaltstitel) oder die Erlangung der deutschen Staatsangehörigkeit.	"
 								: "Additionally, I address the issue of solidifying residency status, particularly concerning the issuance of a settlement permit (an unlimited residence permit) or the acquisition of German citizenship."}
 
 							<br />
@@ -58,7 +58,23 @@ const ContentBox = styled.div`
 	border-radius: 10px;
 	background-color: rgba(26, 77, 97, 0.2);
 	margin: 9rem 10rem 2rem;
+	overflow: hidden;
+	position: relative;
 
+	@media (max-width: 1024px) {
+		margin: 11rem 7rem 2rem;
+	}
+
+	@media (max-width: 900px) {
+		margin: 11rem 5rem 2rem;
+	}
+
+	@media (max-width: 700px) {
+		margin: 11rem 3rem 2rem;
+	}
+	@media (max-width: 500px) {
+		margin: 11rem 2rem 2rem;
+	}
 	@media (max-width: 321px) {
 		margin: 9rem 1rem 2rem;
 	}
@@ -66,18 +82,38 @@ const ContentBox = styled.div`
 
 const ImageContainer = styled.div`
 	position: absolute;
-	top: 8rem;
-	left: 52rem;
+	top: 3rem;
+	left: 30rem;
 	opacity: 0.2;
 	pointer-events: none;
 	z-index: 2;
 	height: 30rem;
 	width: auto;
 
+	@media (max-width: 1024px) {
+		top: 1rem;
+		left: 27rem;
+	}
+
+	@media (max-width: 900px) {
+		top: 1rem;
+		left: 20rem;
+	}
+	@media (max-width: 700px) {
+		top: 1rem;
+		left: 19rem;
+	}
+
+	@media (max-width: 650px) {
+		top: 1rem;
+		left: 10rem;
+	}
+
+	@media (max-width: 650px) {
+		top: 1rem;
+		left: 8rem;
+	}
 	@media (max-width: 320px) {
-		height: 15rem;
-		width: auto;
-		top: 15rem;
 		left: 3rem;
 	}
 `;
@@ -98,6 +134,7 @@ const ContentWrapper = styled.div`
 	margin-bottom: 0rem;
 	display: flex;
 	flex-direction: column;
+	font-family: "FiraSans-Regular";
 `;
 
 const SectionContent = styled.div`

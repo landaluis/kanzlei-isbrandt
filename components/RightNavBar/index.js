@@ -6,7 +6,6 @@ import RechtsgebieteLink from "../RechtsgebieteLink";
 import UbermichLink from "../UbermichLink";
 import TerminBuchenLink from "../TerminBuchenLink";
 import LanguageSwitcher from "../LenguageSwitcher";
-import { useState } from "react";
 
 export default function RightNavBar({ handleClick, currentLanguage, open }) {
 	return (
@@ -45,10 +44,18 @@ align-items: center;
 grid-column-gap: 3rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+	grid-column-gap: 2rem;
+
+
+}
+
+
+
+@media (max-width: 960px) {
 	grid-column-gap: 1rem;
 
-	@media (max-width: 768px) {
+	@media (max-width: 960px) {
 		font-size: 3rem;
 		flex-flow: column nowrap;
 		background-color: #f8f8f8;
@@ -70,59 +77,3 @@ grid-column-gap: 3rem;
 
 }
 `;
-
-// const BurgerButton = styled.div`
-// 	cursor: pointer;
-// 	padding: 10px;
-// 	display: none;
-
-// 	@media (max-width: 768px) {
-// 		display: block;
-// 	}
-
-// 	div {
-// 		width: 25px;
-// 		height: 3px;
-// 		background-color: #333;
-// 		margin: 5px 0;
-// 		transition: 0.4s;
-// 	}
-`;
-
-// const NavMenu = styled.div`;
-// 	display: flex;
-// 	display: flex;
-// align-items: center;
-// grid-column-gap: 3rem;
-// }
-
-// @media (max-width: 768px) {
-// 	grid-column-gap: 1rem;
-
-// }
-
-// @media (max-width: 420px) {
-// 	// grid-column-gap: 0.5rem;
-
-// 	@media (max-width: 768px) {
-// 		flex-direction: column;
-// 		position: absolute;
-// 		top: 60px;
-// 		left: 0;
-// 		background-color: #fff;
-// 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-// 		width: 100%;
-// 		max-height: ${(props) => (props.isOpen ? "300px" : "0")};
-// 		overflow: hidden;
-// 		transition: max-height 0.3s ease-in-out;
-// 	}
-// `;
-
-// const NavItem = styled.div`
-// 	padding: 10px;
-// 	cursor: pointer;
-
-// 	&:hover {
-// 		background-color: #f0f0f0;
-// 	}
-// `;

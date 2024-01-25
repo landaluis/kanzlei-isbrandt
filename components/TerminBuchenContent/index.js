@@ -4,49 +4,26 @@ import { useState, useEffect } from "react";
 import { InlineWidget } from "react-calendly";
 
 export default function TerminBuchenContent({ currentLanguage }) {
-	// const [showBanner, setShowBanner] = useState(true);
-
-	// useEffect(() => {
-	// 	const isBannerClosed = localStorage.getItem("isBannerClosed");
-
-	// 	if (isBannerClosed) {
-	// 		setShowBanner(false);
-	// 	}
-	// }, []);
-
-	// const handleBannerClose = () => {
-	// 	setShowBanner(false);
-
-	// 	localStorage.setItem("isBannerClosed", "true");
-	// };
-
 	return (
 		<>
-			{/* {showBanner && (
-				<BannerContainer>
-					<h3>
-						{" "}
-						{currentLanguage === "DE"
-							? "Wir respektieren Ihre persönliche Privatsphäre"
-							: "We respect your personal privacy"}
-					</h3>
-					{currentLanguage === "DE"
-						? "Diese Website verwendet Cookies. Sie können Ihre Cookie-Einstellungen unter Cookie-Einstellungen (Cookie Settings) unten auf der Buchungsseite anpassen."
-						: "This website uses cookies. You can adjust your cookie settings under Cookie Settings at the bottom of the booking page."}
-					<CloseButton onClick={handleBannerClose}>X</CloseButton>
-				</BannerContainer>
-			)} */}
 			<TerminWrapper>
 				{/* <div className="inline-widget">
 					<InlineWidget url="https://calendly.com/kanzlei-isbrandt" />
 				</div> */}
 
-				{/* <div className="inline-widget">
+				<div className="inline-widget">
 					<InlineWidget
 						url="https://calendly.com/kanzlei-isbrandt/60min?primary_color=1a4d61"
 						style="min-width:320px;height:1700px;"
 					/>
-				</div> */}
+				</div>
+
+				{/* <iframe
+					src="https://outlook.office.com/bookwithme/user/e10427a8c9b2439d9095769d6ff65cba@kanzleiisbrandt.onmicrosoft.com/meetingtype/t7gTVrb_70eSCOWXqWWNQg2?anonymous&ep=mlink"
+					width="100%"
+					height="100%"
+					// scrolling="yes"
+					style={{ border: 0, minHeight: "800px" }}></iframe> */}
 			</TerminWrapper>
 		</>
 	);
@@ -62,24 +39,8 @@ const TerminWrapper = styled.div`
 	}
 `;
 
-// const BannerContainer = styled.div`
-// 	position: fixed;
-// 	bottom: 2rem;
-// 	left: 50%;
-// 	transform: translateX(-50%);
-// 	// background-color: #08181f;
-// 	background-color: rgba(8, 24, 31, 0.9);
-// 	color: #fff;
-// 	padding: 10px;
-// 	padding-bottom: 1.5rem;
-// 	width: 80%;
-// 	text-align: center;
-// 	font-family: "Ruluko-Regular";
-// `;
+// src =
+// 	"https://outlook.office365.com/owa/calendar/cba@kanzleiisbrandt.onmicrosoft.com/bookings/";
 
-// const CloseButton = styled.span`
-// 	position: absolute;
-// 	top: 5px;
-// 	right: 10px;
-// 	cursor: pointer;
-// `;
+// src =
+// 	"https://outlook.office.com/bookwithme/user/e10427a8c9b2439d9095769d6ff65cba@kanzleiisbrandt.onmicrosoft.com/meetingtype/t7gTVrb_70eSCOWXqWWNQg2?anonymous&ep=mlink";

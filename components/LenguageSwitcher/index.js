@@ -4,8 +4,10 @@ import styled from "styled-components";
 export default function LanguageSwitcher({ handleClick, currentLanguage }) {
 	return (
 		<>
-			<Button onClick={handleClick}>{currentLanguage}</Button>
-			{/* <div>{currentLanguage === "DE" ? "Arbeitsrecht" : "Labor Law"}</div> */}
+			<Button onClick={handleClick}>
+				{" "}
+				{currentLanguage === "DE" ? "EN" : "DE"}
+			</Button>
 		</>
 	);
 }

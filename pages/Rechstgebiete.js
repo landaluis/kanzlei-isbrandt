@@ -8,7 +8,6 @@ export default function RechtsgebietePage() {
 		<>
 			<Header />
 			<RechtsgebieteContent />
-
 			<Footer />
 		</>
 	);

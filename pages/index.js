@@ -6,9 +6,7 @@ export default function Home({ handleClick, currentLanguage }) {
 	return (
 		<main>
 			<Header handleClick={handleClick} currentLanguage={currentLanguage} />
-
 			<HomeContent currentLanguage={currentLanguage} />
-
 			<Footer currentLanguage={currentLanguage} />
 		</main>
 	);

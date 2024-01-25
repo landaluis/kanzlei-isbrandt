@@ -13,10 +13,6 @@ export default function Header({ handleClick, currentLanguage, open }) {
 				handleClick={handleClick}
 				currentLanguage={currentLanguage}
 			/>
-			{/* <RightNavBar
-				handleClick={handleClick}
-				currentLanguage={currentLanguage}
-			/> */}
 		</HeaderContainer>
 	);
 }
@@ -38,6 +34,10 @@ const HeaderContainer = styled.div`
 	}
 	@media (max-width: 768px) {
 		padding: 1rem;
+	}
+
+	@media (max-width: 425px) {
+		padding: 0.5rem;
 	}
 
 	@media (max-width: 375px) {

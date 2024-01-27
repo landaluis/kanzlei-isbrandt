@@ -1,18 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  compiler: {
-    styledComponents: true,
-  },
-  images: {
-    remotePatterns: [
-      // {
-      //   protocol: 'https',
-      //   hostname: 'images.unsplash.com'
-      // },
-    ],
-  },
+	// output: "standalone",
+	// output: "export",
+	reactStrictMode: true,
+	swcMinify: true,
+	compiler: {
+		styledComponents: true,
+	},
+	images: {
+		// experimental: {
+		// 	serverComponents: true,
+		// },
+		unoptimized: true,
+		remotePatterns: [
+			// 	// {
+			// 	//   protocol: 'https',
+			// 	//   hostname: 'images.unsplash.com'
+			// 	// },
+		],
+	},
 };
 
 module.exports = nextConfig;

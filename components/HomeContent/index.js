@@ -3,8 +3,9 @@ import styled from "styled-components";
 import Image from "next/image";
 import Watermark from "../../public/Watermark.png";
 import Link from "next/link";
-import asylum from "../../public/asylum.png";
+import Migration from "../../public/Migration.png";
 import work from "../../public/work.png";
+import Arbeit from "../../public/Arbeit.png";
 import euro from "../../public/euro.png";
 import Startseite from "../../public/Startseite.jpg";
 
@@ -75,8 +76,8 @@ export default function HomeContent({ currentLanguage }) {
 					<Link href="/Migrationsrecht" style={{ textDecoration: "none" }}>
 						<Circle>
 							<Image
-								src={asylum}
-								alt="asylum"
+								src={Migration}
+								alt="Migration"
 								style={{
 									objectFit: "contain",
 									width: "30%",
@@ -98,7 +99,7 @@ export default function HomeContent({ currentLanguage }) {
 					<Link href="/Arbeitsrecht" style={{ textDecoration: "none" }}>
 						<Circle>
 							<Image
-								src={work}
+								src={Arbeit}
 								alt="work"
 								style={{
 									objectFit: "contain",
@@ -232,7 +233,7 @@ const RechtsgebieteTitle = styled.h1`
 `;
 
 const Circle = styled.div`
-	border: 1px solid #1a4d61;
+	// border: 1px solid #1a4d61;
 	width: 25vw;
 	height: 25vw;
 	border-radius: 50%;

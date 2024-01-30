@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import Watermark from "../../public/Watermark.png";
+import Watermark from "../../public/Watermark.webp";
 
 export default function AblaufKostenContent({ currentLanguage }) {
 	return (
@@ -91,38 +91,59 @@ export default function AblaufKostenContent({ currentLanguage }) {
 	);
 }
 const ContentBox = styled.div`
-	padding: 2rem;
 	border-radius: 10px;
-	background-color: rgba(26, 77, 97, 0.2);
-	margin-bottom: 4rem;
+	text-align: justify;
 `;
 
 const ImageContainer = styled.div`
 	position: absolute;
-	top: 7rem;
-	left: 32rem;
+	top: 8rem;
+	left: 40rem;
 	opacity: 0.2;
 	pointer-events: none;
 	z-index: 2;
 	height: 30rem;
 	width: auto;
 
-	@media (max-width: 1024px) {
-		left: 27rem;
+	@media (max-width: 1350px) {
+		top: 6rem;
+		left: 35rem;
+	}
+
+	@media (max-width: 1200px) {
+		left: 30rem;
+	}
+	@media (max-width: 1100px) {
+		left: 25rem;
 	}
 
 	@media (max-width: 900px) {
-		left: 10rem;
+		left: 20rem;
 	}
-	@media (max-width: 700px) {
-		left: 19rem;
+
+	@media (max-width: 850px) {
+		left: 17rem;
+		top: 7rem;
+	}
+	@media (max-width: 750px) {
+		left: 15rem;
 	}
 
 	@media (max-width: 650px) {
 		left: 8rem;
-		top: 10rem;
+		top: 8rem;
 	}
-	@media (max-width: 400px) {
+	@media (max-width: 500px) {
+		left: 7rem;
+	}
+
+	@media (max-width: 425px) {
+		height: 20rem;
+		width: auto;
+		left: 7rem;
+		top: 15rem;
+	}
+	@media (max-width: 320px) {
 		left: 3rem;
 	}
 `;
@@ -136,16 +157,12 @@ const Content2Title = styled.h1`
 	color: #1a4d61;
 	font-size: 2.5rem;
 	font-family: "Ruluko-Regular";
-
-	@media (max-width: 320px) {
-	}
 `;
 const Content1 = styled.div`
 	font-size: 1.2rem;
 	margin-top: 2rem;
 	color: #333;
 	line-height: 1.5;
-
 	font-family: "FiraSans-Regular";
 `;
 const Content2 = styled.div`
@@ -176,7 +193,7 @@ const SectionContent = styled.div`
 	overflow: hidden;
 	margin: 6rem 7rem 2rem;
 
-	@media (max-width: 1024px) {
+	@media (max-width: 1000px) {
 		margin: 10rem 7rem 2rem;
 	}
 
@@ -184,13 +201,13 @@ const SectionContent = styled.div`
 		margin: 9rem 6rem 2rem;
 	}
 
-	@media (max-width: 700px) {
-		margin: 9rem 3rem 2rem;
+	@media (max-width: 650px) {
+		margin: 9rem 4rem 2rem;
 	}
 	@media (max-width: 500px) {
-		margin: 9rem 2rem 2rem;
+		margin: 9rem 1rem 2rem;
 	}
-	@media (max-width: 321px) {
+	@media (max-width: 375px) {
 		margin: 9rem 1rem 2rem;
 	}
 `;

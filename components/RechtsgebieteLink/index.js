@@ -87,7 +87,7 @@ const DropdownLink = styled.div`
 		background-color: #ddd;
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 960px) {
 		font-size: 1.5rem;
 	}
 `;

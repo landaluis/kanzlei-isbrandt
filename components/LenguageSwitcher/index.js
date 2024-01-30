@@ -20,7 +20,7 @@ const Button = styled.button`
 	border-radius: 5px;
 	position: relative;
 
-	@media (max-width: 768px) {
+	@media (max-width: 960px) {
 		margin-top: 2rem;
 	}
 `;

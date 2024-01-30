@@ -7,10 +7,10 @@ export default function TerminBuchenContent() {
 			<TerminWrapper>
 				<iframe
 					src="https://outlook.office.com/bookwithme/user/e10427a8c9b2439d9095769d6ff65cba%40kanzleiisbrandt.onmicrosoft.com/meetingtype/t7gTVrb_70eSCOWXqWWNQg2?anonymous&isanonymous=true"
-					width="100%"
-					height="100%"
 					style={{
 						border: 0,
+						height: "100%",
+						width: "100%",
 						minHeight: "1000px",
 						overflow: "hidden",
 					}}></iframe>
@@ -22,9 +22,23 @@ export default function TerminBuchenContent() {
 const TerminWrapper = styled.div`
 	margin-top: 3rem;
 	padding: 4rem;
+	@media (max-width: 1024px) {
+		margin-top: 5rem;
+	}
+
+	@media (max-width: 800px) {
+		margin-top: 7rem;
+	}
+	@media (max-width: 700px) {
+		margin-top: 8rem;
+	}
+	@media (max-width: 450px) {
+		margin-top: 8.5rem;
+		padding: 0.5rem;
+	}
 
 	@media (max-width: 320px) {
 		margin-top: 8.5rem;
-		padding: 0.5rem;
+		padding: 0rem;
 	}
 `;

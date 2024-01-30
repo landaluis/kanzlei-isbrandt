@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import Watermark from "../../public/Watermark.png";
-import Map from "../../public/Map.png";
+import Watermark from "../../public/Watermark.webp";
+import Map from "../../public/Map.avif";
 
 export default function KontaktContent({ currentLanguage }) {
 	return (
@@ -103,9 +103,7 @@ export default function KontaktContent({ currentLanguage }) {
 								</Hour>
 							</TimeContainer1>
 							<TimeContainer2>
-								<Day>
-									{currentLanguage === "DE" ? "Freitags" : "Freitags"} &ndash;{" "}
-								</Day>
+								<Day>{currentLanguage === "DE" ? "Freitags" : "Freitags"} </Day>
 								<Hour>
 									08:30 &ndash; 13:00{" "}
 									{currentLanguage === "DE" ? "Uhr" : "Hrs."}
@@ -141,9 +139,6 @@ const TimeContainer1 = styled.div`
 	width: auto;
 	flex-direction: row;
 	margin-bottom: 1rem;
-	// @media (max-width: 800px) {
-	// 	justify-content: space-around;
-	// }
 
 	@media (max-width: 320px) {
 		flex-direction: column;
@@ -155,10 +150,6 @@ const TimeContainer2 = styled.div`
 	justify-content: space-between;
 	width: auto;
 	flex-direction: row;
-
-	// @media (max-width: 800px) {
-	// 	justify-content: space-around;
-	// }
 
 	@media (max-width: 320px) {
 		flex-direction: column;
@@ -255,11 +246,43 @@ const ImageContainer = styled.div`
 	height: 30rem;
 	width: auto;
 
-	@media (max-width: 320px) {
-		height: 5rem;
+	@media (max-width: 1350px) {
+		left: 50rem;
+	}
+
+	@media (max-width: 1200px) {
+		left: 45rem;
+	}
+	@media (max-width: 1100px) {
+		left: 40rem;
+		top: 12rem;
+	}
+
+	@media (max-width: 960px) {
+		top: 52rem;
+		left: 30rem;
+	}
+
+	@media (max-width: 850px) {
+		left: 25rem;
+	}
+	@media (max-width: 750px) {
+		left: 20rem;
+	}
+
+	@media (max-width: 650px) {
+		left: 15rem;
+		top: 53rem;
+	}
+	@media (max-width: 500px) {
+		left: 10rem;
+	}
+
+	@media (max-width: 425px) {
+		height: 20rem;
 		width: auto;
-		top: 50rem;
-		left: 0rem;
+		left: 5rem;
+		top: 55rem;
 	}
 `;
 
@@ -267,14 +290,11 @@ const KontaktContainer = styled.div`
 	padding-top: 130px;
 	color: #7a8387;
 	overflow: hidden;
-
 	padding: 8rem 15rem 4rem;
 	position: relative;
 	display: flex;
 	flex-direction: column;
-
 	justify-content: center;
-
 	color: #7a8387;
 
 	@media (max-width: 1350px) {

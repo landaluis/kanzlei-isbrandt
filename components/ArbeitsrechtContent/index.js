@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import Watermark from "../../public/Watermark.png";
+import Watermark from "../../public/Watermark.webp";
 
 export default function ArbeitsrechtContent({ currentLanguage }) {
 	return (
@@ -45,7 +45,6 @@ export default function ArbeitsrechtContent({ currentLanguage }) {
 const ContentBox = styled.div`
 	padding: 1rem;
 	border-radius: 10px;
-	background-color: rgba(26, 77, 97, 0.2);
 	margin: 9rem 10rem 2rem;
 	overflow: hidden;
 	position: relative;
@@ -61,46 +60,65 @@ const ContentBox = styled.div`
 	@media (max-width: 700px) {
 		margin: 11rem 3rem 2rem;
 	}
+
 	@media (max-width: 500px) {
 		margin: 11rem 2rem 2rem;
 	}
-	@media (max-width: 321px) {
-		margin: 9rem 1rem 2rem;
+	@media (max-width: 425px) {
+		margin: 9rem 2rem 2rem;
+	}
+	@media (max-width: 350px) {
+		margin: 7rem 1rem 2rem;
 	}
 `;
 
 const ImageContainer = styled.div`
 	position: absolute;
-	top: 3rem;
-	left: 30rem;
+	top: 1rem;
+	left: 40rem;
 	opacity: 0.2;
 	pointer-events: none;
 	z-index: 2;
 	height: 30rem;
 	width: auto;
 
-	@media (max-width: 1024px) {
+	@media (max-width: 1350px) {
 		top: 1rem;
-		left: 27rem;
+		left: 35rem;
+	}
+
+	@media (max-width: 1200px) {
+		left: 30rem;
+	}
+	@media (max-width: 1100px) {
+		left: 25rem;
 	}
 
 	@media (max-width: 900px) {
-		top: 1rem;
 		left: 20rem;
 	}
-	@media (max-width: 700px) {
-		top: 1rem;
-		left: 19rem;
+
+	@media (max-width: 850px) {
+		left: 17rem;
+		top: 2rem;
+	}
+	@media (max-width: 750px) {
+		left: 15rem;
 	}
 
 	@media (max-width: 650px) {
-		top: 1rem;
 		left: 10rem;
+		top: 3rem;
+	}
+	@media (max-width: 500px) {
+		left: 7rem;
 	}
 
-	@media (max-width: 650px) {
-		top: 1rem;
-		left: 8rem;
+	@media (max-width: 425px) {
+		height: 20rem;
+		width: auto;
+		left: 5rem;
+		top: 5rem;
 	}
 	@media (max-width: 320px) {
 		left: 3rem;

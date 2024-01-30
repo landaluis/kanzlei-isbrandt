@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 
-import Watermark from "../../public/Watermark.png";
+import Watermark from "../../public/Watermark.webp";
 
 export default function ImpressumContent() {
 	return (

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ArbeitsrechtContent from "../ArbeitsrechtContent";
 import MigrationsrechtContent from "../MigrationsrechtContent";
-import Watermark from "../../public/Watermark.png";
+import Watermark from "../../public/Watermark.webp";
 import Image from "next/image";
 
 export default function RechtsgebieteContent() {

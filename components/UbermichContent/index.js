@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Watermark from "../../public/Watermark.png";
+import Watermark from "../../public/Watermark.webp";
 import Image from "next/image";
-import Übermich from "../../public/Übermich.jpg";
+import Übermich from "../../public/Übermich.avif";
 
 export default function UbermichContent({ currentLanguage }) {
 	return (
@@ -18,6 +18,7 @@ export default function UbermichContent({ currentLanguage }) {
 								<Image
 									src={Übermich}
 									alt="CI Photo"
+									priority={true}
 									style={{
 										height: "100%",
 										width: "auto",
@@ -99,7 +100,7 @@ export default function UbermichContent({ currentLanguage }) {
 							</p>
 						</Content>
 					</ContentWrapper>
-					{/* <ImageContainer>
+					<ImageContainer>
 						<Image
 							src={Watermark}
 							alt="KI Logo"
@@ -108,7 +109,7 @@ export default function UbermichContent({ currentLanguage }) {
 								width: "auto",
 							}}
 						/>
-					</ImageContainer> */}
+					</ImageContainer>
 				</SectionContent>
 			</ContentBox>
 		</>
@@ -138,7 +139,6 @@ const ImageContainer2 = styled.div`
 	@media (max-width: 375px) {
 		width: auto;
 		height: 20rem;
-		// height: 10rem;
 	}
 `;
 const Content = styled.div`
@@ -155,8 +155,7 @@ const Content = styled.div`
 	}
 
 	@media (max-width: 800px) {
-		margin: 0 auto; /* Center the container horizontally */
-		// text-align: center; /* Center the child elements */
+		margin: 0 auto;
 		float: none;
 	}
 `;
@@ -165,39 +164,38 @@ const SectionContent = styled.div`
 	position: relative;
 	width: 100%;
 	flex: 1;
-	// overflow: hidden;
+	overflow: hidden;
 `;
 
 const ContentBox = styled.div`
 	padding: 2rem;
 	border-radius: 10px;
-	background-color: rgba(26, 77, 97, 0.2);
-	// margin: 8rem 2rem 4rem;
-	margin: 9rem 10rem 2rem;
+	margin: 7rem 10rem 2rem;
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
-	// @media (max-width: 321px) {
-	// 	margin-left: 1rem;
-	// 	margin-right: 1rem;
-	// }
-
-	@media (max-width: 1024px) {
-		margin: 11rem 7rem 2rem;
+	@media (max-width: 1224px) {
+		margin: 7rem 7rem 2rem;
+	}
+	@media (max-width: 1100px) {
+		margin: 7rem 5rem 2rem;
 	}
 
-	@media (max-width: 900px) {
-		margin: 11rem 5rem 2rem;
+	@media (max-width: 1024px) {
+		margin: 9rem 5rem 2rem;
+	}
+	@media (max-width: 950px) {
+		margin: 9rem 3rem 2rem;
 	}
 
 	@media (max-width: 700px) {
-		margin: 11rem 3rem 2rem;
+		margin: 9rem 2rem 2rem;
 	}
 	@media (max-width: 500px) {
-		margin: 11rem 2rem 2rem;
-		padding: 1rem;
+		margin: 9rem 1rem 2rem;
+		padding: 0rem;
 	}
 	@media (max-width: 321px) {
 		margin: 9rem 1rem 2rem;
@@ -206,24 +204,64 @@ const ContentBox = styled.div`
 
 const ImageContainer = styled.div`
 	position: absolute;
-	top: 0rem;
-	left: 46rem;
+	top: -4rem;
+	left: 60rem;
 	opacity: 0.2;
 	pointer-events: none;
 	z-index: 2;
 	height: 30rem;
 	width: auto;
+	@media (max-width: 1540px) {
+		left: 40rem;
+	}
 
-	@media (max-width: 320px) {
-		height: 15rem;
+	@media (max-width: 1400px) {
+		left: 35rem;
+	}
+	@media (max-width: 1240px) {
+		left: 30rem;
+	}
+	@media (max-width: 1100px) {
+		left: 25rem;
+	}
+	@media (max-width: 900px) {
+		left: 25rem;
+		top: -2rem;
+	}
+
+	@media (max-width: 888px) {
+		left: 20rem;
+	}
+
+	@media (max-width: 800px) {
+		top: 35rem;
+		left: 15rem;
+	}
+	@media (max-width: 768px) {
+		left: 11rem;
+	}
+	@media (max-width: 700px) {
+		height: 25rem;
 		width: auto;
-		top: 10rem;
-		left: 3rem;
+	}
+
+	@media (max-width: 650px) {
+		left: 6rem;
+	}
+
+	@media (max-width: 500px) {
+		left: 9rem;
+	}
+
+	@media (max-width: 380px) {
+		left: 5rem;
+		top: 20rem;
+		height: 20rem;
+		width: auto;
 	}
 `;
 
 const ContentWrapper = styled.div`
-	max-width: 800px;
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
@@ -233,10 +271,10 @@ const ContentWrapper = styled.div`
 `;
 
 const Title = styled.h1`
-	font-size: 2.5rem;
+	font-size: 3rem;
 	color: #1a4d61;
 	padding: 10px;
 	text-align: center;
-	margin-top: 0rem;
+	margin-top: 0;
 	margin-bottom: 0;
 `;

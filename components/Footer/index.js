@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ImpressumLink from "../ImpressumLink";
-import LogoKI from "../../public/LogoKI.png";
+import LogoKI from "../../public/LogoKI.webp";
 import Image from "next/image";
 import KontaktLinkFooter from "../KontaktLinkFooter";
 import DatenschutzLink from "../DatenschutzLink";
@@ -47,6 +47,8 @@ export default function Footer({ currentLanguage }) {
 	);
 }
 const ImageContainer = styled.div`
+	display: flex;
+	align-items: center;
 	position: relative	
 	top: 0.5rem;
 	left: 0rem;
@@ -60,13 +62,9 @@ const ImageContainer = styled.div`
 		display: none;
 	}
 
-	@media (max-width: 768px) {
-		display: none;
-	}
 
-	// @media (max-width: 375px) {
-	// 	display: none;
-	// }
+
+	
 `;
 const Section1 = styled.div`
 	display: flex;
@@ -77,10 +75,6 @@ const Section1 = styled.div`
 		flex-direction: column;
 		align-items: center;
 	}
-
-	// @media (max-width: 375px) {
-	// 	flex-direction: column;
-	// }
 `;
 const Section2 = styled.div``;
 const Copyright = styled.div`
@@ -96,12 +90,11 @@ const FooterContainer = styled.div`
 	background-color: #08181f;
 	flex-direction: column;
 	display: flex;
-	padding: 2rem 3rem 2rem;
+	padding: 2rem 0rem 2rem;
 	text-align: center;
 	bottom: 0;
 	width: 100%;
 	min-height: auto;
-
 	font-size: 1.2rem;
 	margin-left: auto;
 	margin-right: auto;
@@ -109,10 +102,6 @@ const FooterContainer = styled.div`
 	@media (max-width: 768px) {
 		padding: 2rem 0rem 2rem;
 	}
-
-	// @media (max-width: 375px) {
-	// 	padding: 0.5rem;
-	// }
 `;
 
 const List = styled.ul`
@@ -138,7 +127,7 @@ const List1 = styled(List)`
 `;
 
 const List2 = styled(List)`
-	margin-left: 5rem;
+	margin-left: 0rem;
 	padding: 1rem 1.5rem 1rem 1.5rem;
 	border-left: 1px dotted rgba(255, 255, 255, 0.2);
 	border-right: 1px dotted rgba(255, 255, 255, 0.2);
@@ -155,11 +144,6 @@ const List2 = styled(List)`
 		padding: 1rem;
 		margin-left: 0;
 	}
-
-	// @media (max-width: 375px) {
-	// 	padding: 1rem;
-	// 	margin-left: 0;
-	// }
 `;
 
 const ListItem = styled.li`

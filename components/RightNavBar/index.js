@@ -46,11 +46,7 @@ grid-column-gap: 3rem;
 
 @media (max-width: 1024px) {
 	grid-column-gap: 2rem;
-
-
 }
-
-
 
 @media (max-width: 960px) {
 	grid-column-gap: 1rem;
@@ -73,7 +69,5 @@ grid-column-gap: 3rem;
 
 @media (max-width: 420px) {
 	grid-column-gap: 0.5rem;
-
-
 }
 `;

@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import Watermark from "../../public/Watermark.png";
+import Watermark from "../../public/Watermark.webp";
 import Link from "next/link";
-import Migration from "../../public/Migration.png";
-import work from "../../public/work.png";
-import Arbeit from "../../public/Arbeit.png";
-import euro from "../../public/euro.png";
-import Startseite from "../../public/Startseite.jpg";
+import Migration from "../../public/Migration.webp";
+import Arbeit from "../../public/Arbeit.webp";
+import EuroZahnrad from "../../public/EuroZahnrad.webp";
+import Startseite from "../../public/Startseite.avif";
 
 export default function HomeContent({ currentLanguage }) {
 	return (
@@ -28,6 +27,8 @@ export default function HomeContent({ currentLanguage }) {
 						<Image
 							src={Startseite}
 							alt="CI Photo"
+							placeholder="blur"
+							priority={true}
 							style={{
 								height: "100%",
 								width: "auto",
@@ -45,19 +46,19 @@ export default function HomeContent({ currentLanguage }) {
 							{currentLanguage === "DE"
 								? "Das Eintreten für Menschen-, Bürger- und Arbeitnehmer*innenrechte ist ein fester Bestandteil meiner anwaltlichen Tätigkeit. Ich vertrete in meiner Kanzlei die rechtlichen Interessen von Geflüchteten und Migrant*innen sowie Arbeitnehmer*innen."
 								: " Advocating for human, citizen, and workers' rights is an integral part of my legal practice. In my law firm, I represent the legal interests of refugees, migrants, and workers. "}
-						</p>
-
-						<p>
+							<br />
+							<br />
 							{currentLanguage === "DE"
 								? "Vereinbaren Sie gerne eine Erstberatung per E-Mail oder über diese Homepage. "
 								: "Feel free to schedule an initial consultation via email or through this website."}
-						</p>
-
-						<p>
+							<br />
+							<br />
 							{currentLanguage === "DE"
 								? "Ich freue mich über Ihre Anfrage!"
 								: "I look forward to receiving your inquiry!"}
 						</p>
+						<br />
+
 						<MehrUberMichLink>
 							<Link
 								href="/Ubermich"
@@ -80,7 +81,7 @@ export default function HomeContent({ currentLanguage }) {
 								alt="Migration"
 								style={{
 									objectFit: "contain",
-									width: "30%",
+									width: "40%",
 									position: "relative",
 									height: "unset",
 								}}></Image>
@@ -89,11 +90,6 @@ export default function HomeContent({ currentLanguage }) {
 									? "Migrationsrecht"
 									: "Inmigration law"}
 							</TitleCircle>
-							{/* <TextCircle>
-								{currentLanguage === "DE"
-									? "Wie Rechtsbeistand Verfahrensrechte einfordern kann."
-									: "How legal aid can claim procedural rights"}
-							</TextCircle> */}
 						</Circle>
 					</Link>
 					<Link href="/Arbeitsrecht" style={{ textDecoration: "none" }}>
@@ -103,7 +99,7 @@ export default function HomeContent({ currentLanguage }) {
 								alt="work"
 								style={{
 									objectFit: "contain",
-									width: "30%",
+									width: "40%",
 									position: "relative",
 									height: "unset",
 								}}></Image>
@@ -111,28 +107,31 @@ export default function HomeContent({ currentLanguage }) {
 								{" "}
 								{currentLanguage === "DE" ? "Arbeitsrecht" : "Employment law"}
 							</TitleCircle>
-							{/* <TextCircle>
-								{currentLanguage === "DE"
-									? "Wie eine rechtliche Beratung die Komplexität des Arbeitsverhältnisses bewältigen kann?"
-									: "How can legal advice deal with the complexity of the employment relationship?"}
-							</TextCircle> */}
 						</Circle>
 					</Link>
 				</Rechtsgebiete>
 				<Separator></Separator>
 				<AblaufKostenWrapper>
-					<Link href="/AblaufKosten" style={{ textDecoration: "none" }}>
-						<Image
-							src={euro}
-							alt="euro"
-							style={{
-								objectFit: "contain",
-								width: "30%",
-								position: "relative",
-								height: "unset",
-							}}></Image>
+					<Link
+						href="/AblaufKosten"
+						style={{
+							textDecoration: "none",
+							display: "flex",
+							justifyContent: "center",
+							flexDirection: "row",
+							textAlign: "center",
+						}}>
 						<AblaufKostenTitle>
-							{" "}
+							<Image
+								src={EuroZahnrad}
+								alt="EuroZahnrad"
+								style={{
+									objectFit: "contain",
+									width: "10%",
+									position: "relative",
+									height: "unset",
+								}}></Image>{" "}
+							&nbsp;
 							{currentLanguage === "DE"
 								? "Ablauf und Kosten"
 								: "Procedure and costs"}
@@ -146,18 +145,20 @@ export default function HomeContent({ currentLanguage }) {
 const MehrUberMichLink = styled.div`
 	width: 9rem;
 	display: flex;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-	border: 1px solid #1a4d61;
 	padding: 0.5rem;
 	border-radius: 5px;
-	margin-top: 2rem;
+	margin-top: 0.5rem;
 	cursor: pointer;
 	font-size: 1.1rem;
 	font-family: "Ruluko-Regular", sans-serif;
 	align-items: center;
 	justify-content: center;
 	margin-left: auto;
-	margin-right: 50%;
+	margin-right: auto;
+
+	&:hover {
+		background-color: rgba(26, 77, 97, 0.2);
+	}
 
 	@media (max-width: 768px) {
 		margin-left: auto;
@@ -166,36 +167,44 @@ const MehrUberMichLink = styled.div`
 `;
 
 const TitleCircle = styled.h3`
-	margin: 2rem;
-`;
-const TextCircle = styled.p`
-	font-size: 1rem;
+	margin: 1rem;
 `;
 
 const AblaufKostenWrapper = styled.div`
-	border: 1px solid rgba(26, 77, 97, 0.5);
-	border-radius: 15px;
-	height: 15rem;
-	width: 10rem;
+	border-radius: 10px;
+	width: auto;
 	padding: 1rem;
-	justify-content: center;
+	padding-bottom: 0rem;
+	justify-content: space-around;
 	margin: auto;
 	margin-top: 2rem;
 	display: flex;
-	flex-direction: row;
+	align-items: center;
 	text-align: center;
+	height: 100%;
 
 	&:hover {
 		background-color: rgba(26, 77, 97, 0.2);
 	}
+	@media (max-width: 425px) {
+		padding: 0rem;
+	}
 `;
 const AblaufKostenTitle = styled.h2`
-	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	font-size: 2.5rem;
 	color: #1a4d61;
 	padding: 0rem;
-	margin-top: 2rem;
-	margin-bottom: 0rem;
+	position: relative;
+	margin-left: 1rem;
+	text-align: center;
+
+	@media (max-width: 375px) {
+		font-size: 2rem;
+	}
 `;
+
 const Separator = styled.div`
 	border-bottom: 1px solid rgba(26, 77, 97, 0.5);
 	padding-top: 0rem;
@@ -203,18 +212,11 @@ const Separator = styled.div`
 	width: 100%;
 	justify-content: center;
 	margin: 0 auto;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 	display: flex;
-
-	@media (max-width: 1024px) {
-	}
-
-	@media (max-width: 375px) {
-		margin-bottom: 4rem;
-	}
 `;
 const RechtsgebieteTitle = styled.h1`
-	font-size: 3rem;
+	font-size: 2.5rem;
 	color: #1a4d61;
 	padding: 10px;
 	text-align: center;
@@ -222,21 +224,19 @@ const RechtsgebieteTitle = styled.h1`
 	margin-bottom: 3rem;
 
 	@media (max-width: 768px) {
-		font-size: 3rem;
 		margin-bottom: 1rem;
 	}
 
 	@media (max-width: 375px) {
-		font-size: 2.1rem;
+		font-size: 2rem;
 		margin-top: 0rem;
 	}
 `;
 
 const Circle = styled.div`
-	// border: 1px solid #1a4d61;
 	width: 25vw;
 	height: 25vw;
-	border-radius: 50%;
+	border-radius: 10px;
 	background-color: #f8f8f8;
 	text-align: center;
 	color: #1a4d61;
@@ -247,7 +247,6 @@ const Circle = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.55);
 
 	&:hover {
 		background-color: rgba(26, 77, 97, 0.2);
@@ -257,10 +256,10 @@ const Circle = styled.div`
 	}
 
 	@media (max-width: 768px) {
-		margin-top: 2rem;
 		width: 25rem;
 		height: 25rem;
 		font-size: 2rem;
+		padding: 0rem;
 	}
 
 	@media (max-width: 425px) {
@@ -271,7 +270,6 @@ const Circle = styled.div`
 	@media (max-width: 375px) {
 		width: 15rem;
 		height: 15rem;
-		margin-top: 2rem;
 		font-size: 1.3rem;
 	}
 `;
@@ -293,30 +291,13 @@ const ImageContainer = styled.div`
 	width: auto;
 	margin-right: 3rem;
 
-	@media (max-width: 1250px) {
-		margin-top: 4.5rem;
-	}
-
-	@media (max-width: 1024px) {
-		margin-top: 3.5rem;
-	}
-
-	@media (max-width: 768px) {
+	@media (max-width: 960px) {
 		margin-right: 0;
-		margin-top: 5.5rem;
-	}
-
-	@media (max-width: 630px) {
-		margin-top: 6.5rem;
-	}
-
-	@media (max-width: 320px) {
 	}
 
 	@media (max-width: 290px) {
 		height: 25rem;
 		width: auto;
-		margin-top: 4.5rem;
 	}
 `;
 const HomeWrapper = styled.div`
@@ -329,33 +310,45 @@ const HomeWrapper = styled.div`
 
 	@media (max-width: 1000px) {
 		padding: 5rem 1rem 2rem;
-		margin: 2rem;
+		margin-top: 6rem;
+	}
+
+	@media (max-width: 768px) {
+		padding: 5rem 0rem 2rem;
+		margin: 6rem;
+		margin-top: 7rem;
 	}
 	@media (max-width: 650px) {
-		padding: 5rem 1rem 2rem;
-		margin: 0;
+		padding: 5rem 0rem 2rem;
+		margin: 4rem;
+		margin-top: 8rem;
+	}
+	@media (max-width: 500px) {
+		margin: 1rem;
+		margin-top: 7rem;
 	}
 	@media (max-width: 425px) {
-		padding: 5rem 1rem 2rem;
+		margin-top: 7rem;
 	}
 
 	@media (max-width: 375px) {
-		padding: 5rem 1rem 2rem;
+		margin-top: 5rem;
 	}
 `;
 
 const TeaserTitle = styled.h2`
 	color: #1a4d61;
 	font-family: "Ruluko-Regular";
+	margin: 0;
 
 	@media (max-width: 425px) {
 		text-align: left;
-		margin-top: 3rem;
+		margin-top: 1rem;
 	}
 `;
 
 const Teaser = styled.div`
-	position: relative; /* Ensure relative positioning for child absolute positioning */
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	font-size: 1.3rem;
@@ -376,6 +369,7 @@ const Teaser = styled.div`
 
 	@media (max-width: 375px) {
 		flex-direction: column;
+		font-size: 1rem;
 	}
 `;
 
@@ -383,8 +377,11 @@ const TeaserContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: left;
-
 	font-family: "FiraSans-Regular";
+
+	@media (max-width: 960px) {
+		margin-top: 2rem;
+	}
 `;
 
 const ImageContainer2 = styled.div`
@@ -399,34 +396,47 @@ const ImageContainer2 = styled.div`
 	overflow: hidden;
 
 	@media (max-width: 1260px) {
-		top: 4rem;
-		left: 32rem;
+		top: 1rem;
+		left: 39rem;
+	}
+	@media (max-width: 1200px) {
+		left: 35rem;
 	}
 
 	@media (max-width: 1024px) {
-		top: 4rem;
 		left: 27rem;
 	}
 
 	@media (max-width: 960px) {
 		top: 28rem;
-		left: 26rem;
+		left: 25rem;
+	}
+
+	@media (max-width: 900px) {
+		top: 30rem;
+		left: 22rem;
 	}
 
 	@media (max-width: 824px) {
 		left: 17rem;
+		top: 33rem;
 	}
 
 	@media (max-width: 768px) {
-		top: 40rem;
-		left: 15rem;
+		top: 35rem;
+		left: 12rem;
+	}
+
+	@media (max-width: 768px) {
+		top: 35rem;
+		left: 8rem;
 	}
 
 	@media (max-width: 425px) {
 		height: 20rem;
 		width: auto;
 		left: 8rem;
-		top: 42rem;
+		top: 35rem;
 	}
 
 	@media (max-width: 375px) {
@@ -434,12 +444,14 @@ const ImageContainer2 = styled.div`
 		width: auto;
 		left: 9rem;
 	}
+	@media (max-width: 360px) {
+		left: 7rem;
+	}
 
 	@media (max-width: 320px) {
 		height: 16rem;
 		width: auto;
 		left: 6rem;
-		top: 45rem;
 	}
 
 	@media (max-width: 290px) {

@@ -86,7 +86,7 @@ export default function DatenschutzContent() {
 						Inhalte, die Sie an uns als Seitenbetreiber senden, nutzt unsere
 						Website eine SSL-bzw. TLS-Verschlüsselung. Damit sind Daten, die Sie
 						über diese Website übermitteln, für Dritte nicht mitlesbar. Sie
-						erkennen eine verschlüsselte Verbindung an der 'https://'
+						erkennen eine verschlüsselte Verbindung an der &quot;https://&quot;
 						Adresszeile Ihres Browsers und am Schloss-Symbol in der
 						Browserzeile.
 					</p>
@@ -130,11 +130,11 @@ export default function DatenschutzContent() {
 						machen.
 					</p>
 					<p>
-						Einige Cookies sind 'Session-Cookies'. Solche Cookies werden nach
-						Ende Ihrer Browser-Sitzung von selbst gelöscht. Hingegen bleiben
-						andere Cookies auf Ihrem Endgerät bestehen, bis Sie diese selbst
-						löschen. Solche Cookies helfen uns, Sie bei Rückkehr auf unserer
-						Website wiederzuerkennen.
+						Einige Cookies sind &quot;Session-Cookies&quot;. Solche Cookies
+						werden nach Ende Ihrer Browser-Sitzung von selbst gelöscht. Hingegen
+						bleiben andere Cookies auf Ihrem Endgerät bestehen, bis Sie diese
+						selbst löschen. Solche Cookies helfen uns, Sie bei Rückkehr auf
+						unserer Website wiederzuerkennen.
 					</p>
 					<p>
 						Mit einem modernen Webbrowser können Sie das Setzen von Cookies
@@ -156,18 +156,19 @@ export default function DatenschutzContent() {
 					</p>
 					<h3>CookieYes</h3>
 					<p>
-						Diese Website verwendet das Cookie-Einwilligungs-Tool 'CookieYes',
-						das von Mozilor Limited (nachfolgend 'CookieYes') bereitgestellt
-						wird, um gültige Einwilligungen der Nutzer für Cookies und
-						Cookie-basierte Anwendungen zu erhalten. Durch die Einbindung eines
-						entsprechenden JavaScript-Codes wird den Nutzern beim Aufruf einer
-						Seite ein Banner angezeigt, in dem durch Auswählen des
-						entsprechenden Kästchens die Zustimmung zu bestimmten Cookies
-						und/oder Cookie-basierten Anwendungen erteilt werden kann. Das Tool
-						blockiert alle zustimmungspflichtigen Cookies, bis der einzelne
-						Nutzer eine entsprechende Zustimmung erteilt. Damit wird
-						sichergestellt, dass Cookies nur dann auf dem Endgerät des Nutzers
-						gesetzt werden, wenn tatsächlich die Zustimmung erteilt wurde.
+						Diese Website verwendet das Cookie-Einwilligungs-Tool
+						&quot;CookieYes&quot;, das von Mozilor Limited (nachfolgend
+						&quot;CookieYes&quot;) bereitgestellt wird, um gültige
+						Einwilligungen der Nutzer für Cookies und Cookie-basierte
+						Anwendungen zu erhalten. Durch die Einbindung eines entsprechenden
+						JavaScript-Codes wird den Nutzern beim Aufruf einer Seite ein Banner
+						angezeigt, in dem durch Auswählen des entsprechenden Kästchens die
+						Zustimmung zu bestimmten Cookies und/oder Cookie-basierten
+						Anwendungen erteilt werden kann. Das Tool blockiert alle
+						zustimmungspflichtigen Cookies, bis der einzelne Nutzer eine
+						entsprechende Zustimmung erteilt. Damit wird sichergestellt, dass
+						Cookies nur dann auf dem Endgerät des Nutzers gesetzt werden, wenn
+						tatsächlich die Zustimmung erteilt wurde.
 					</p>
 					<p>
 						Damit das Cookie-Einwilligungstool die Seitenaufrufe eindeutig
@@ -222,9 +223,9 @@ export default function DatenschutzContent() {
 					</p>
 					<p>
 						Das Unternehmen Google ist für das us-europäische
-						Datenschutzübereinkommen 'Privacy Shield' zertifiziert. Dieses
-						Datenschutzübereinkommen soll die Einhaltung des in der EU geltenden
-						Datenschutzniveaus gewährleisten.
+						Datenschutzübereinkommen &quot;Privacy Shield&quot; zertifiziert.
+						Dieses Datenschutzübereinkommen soll die Einhaltung des in der EU
+						geltenden Datenschutzniveaus gewährleisten.
 					</p>
 					<p>
 						Einzelheiten über Google Web Fonts finden Sie unter: {" "}
@@ -315,10 +316,11 @@ export default function DatenschutzContent() {
 						Conversion-Tracking Statistiken statt.
 					</p>
 					<p>
-						Die Speicherung von 'Conversion-Cookies' erfolgt auf Grundlage von
-						Art. 6 Abs. 1 lit. f DSGVO. Wir als Websitebetreiber haben ein
-						berechtigtes Interesse an der Analyse des Nutzerverhaltens, um unser
-						Webangebot und unsere Werbung zu optimieren.
+						Die Speicherung von &quot;Conversion-Cookies&quot; erfolgt auf
+						Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir als Websitebetreiber
+						haben ein berechtigtes Interesse an der Analyse des
+						Nutzerverhaltens, um unser Webangebot und unsere Werbung zu
+						optimieren.
 					</p>
 					<p>
 						Einzelheiten zu Google AdWords und Google Conversion-Tracking finden

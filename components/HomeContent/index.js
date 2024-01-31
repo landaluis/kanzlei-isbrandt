@@ -31,7 +31,6 @@ export default function HomeContent({ currentLanguage }) {
 							style={{
 								height: "100%",
 								width: "auto",
-								maxWidth: "100%",
 							}}
 						/>
 					</ImageContainer>

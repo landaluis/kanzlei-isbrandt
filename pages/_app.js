@@ -26,7 +26,10 @@ export default function App({ Component, pageProps }) {
 		<>
 			<GlobalStyle />
 			<Head>
-				<meta name="description" content=" " />
+				<meta
+					name="description"
+					content="Rechtsanwältin für Migrationsrecht und Arbeitsrecht in Bielefeld."
+				/>
 				<title>Kanzlei Isbrandt</title>
 			</Head>
 			<Script

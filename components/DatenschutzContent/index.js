@@ -526,7 +526,7 @@ const DatenContainer = styled.div`
 	@media (max-width: 700px) {
 		padding: 11rem 3rem 4rem;
 	}
-	@media (max-width: 400px) {
+	@media (max-width: 425px) {
 		padding: 11rem 1rem 4rem;
 	}
 	@media (max-width: 380px) {

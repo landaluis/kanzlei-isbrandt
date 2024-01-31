@@ -22,7 +22,7 @@ export default function UbermichContent({ currentLanguage }) {
 									style={{
 										height: "100%",
 										width: "auto",
-										maxWidth: "100%",
+										// maxWidth: "100%",
 									}}
 								/>
 							</ImageContainer2>
@@ -136,9 +136,9 @@ const ImageContainer2 = styled.div`
 		margin-bottom: 3rem;
 	}
 
-	@media (max-width: 375px) {
+	@media (max-width: 290px) {
 		width: auto;
-		height: 20rem;
+		height: 25rem;
 	}
 `;
 const Content = styled.div`
@@ -157,6 +157,9 @@ const Content = styled.div`
 	@media (max-width: 800px) {
 		margin: 0 auto;
 		float: none;
+	}
+	@media (max-width: 425px) {
+		text-align: left;
 	}
 `;
 
@@ -255,7 +258,6 @@ const ImageContainer = styled.div`
 
 	@media (max-width: 380px) {
 		left: 5rem;
-		top: 20rem;
 		height: 20rem;
 		width: auto;
 	}

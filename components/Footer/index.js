@@ -12,9 +12,9 @@ export default function Footer({ currentLanguage }) {
 			<FooterContainer>
 				<Section1>
 					<List1>
-						<ListItem>Tel: 02381/985000</ListItem>
-						<ListItem>Fax: 02381/985050</ListItem>
-						<ListItem>Email: info@rak-hamm.de</ListItem>
+						<ListItem>Tel: 0521 44813645</ListItem>
+						<ListItem>Fax: 0521 44813646</ListItem>
+						<ListItem>Email: info@kanzlei-isbrandt.de</ListItem>
 					</List1>
 					<List2>
 						{" "}

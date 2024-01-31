@@ -23,6 +23,7 @@ export default function ImpressumContent() {
 						Fax: 0521 44813646
 						<br />
 						info@kanzlei-isbrandt.de <br />
+						<br />
 						Berufshaftpflichtversicherung:
 						<br />
 						Allianz Versicherungs-AG
@@ -91,7 +92,7 @@ export default function ImpressumContent() {
 						<br />
 						33615 Bielefeld
 					</p>
-					{/* <p>USt.-IdNr.: </p> */}
+					<p>USt.-IdNr.: DE365341903</p>
 				</Content>
 				<ImageContainer>
 					<Image

@@ -142,6 +142,10 @@ const Content1 = styled.div`
 	color: #333;
 	line-height: 1.5;
 	text-align: justify;
+
+	@media (max-width: 425px) {
+		text-align: left;
+	}
 `;
 
 const ContentWrapper = styled.div`

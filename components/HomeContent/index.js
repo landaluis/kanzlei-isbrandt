@@ -118,7 +118,6 @@ export default function HomeContent({ currentLanguage }) {
 							textDecoration: "none",
 							display: "flex",
 							justifyContent: "center",
-							flexDirection: "row",
 							textAlign: "center",
 						}}>
 						<AblaufKostenTitle>
@@ -173,8 +172,8 @@ const TitleCircle = styled.h3`
 const AblaufKostenWrapper = styled.div`
 	border-radius: 10px;
 	width: auto;
-	padding: 1rem;
-	padding-bottom: 0rem;
+	padding: 2rem;
+	// padding-bottom: 0rem;
 	justify-content: space-around;
 	margin: auto;
 	margin-top: 2rem;
@@ -186,9 +185,9 @@ const AblaufKostenWrapper = styled.div`
 	&:hover {
 		background-color: rgba(26, 77, 97, 0.2);
 	}
-	@media (max-width: 425px) {
-		padding: 0rem;
-	}
+	// @media (max-width: 425px) {
+	// 	padding: 0rem;
+	// }
 `;
 const AblaufKostenTitle = styled.h2`
 	display: flex;
@@ -196,7 +195,9 @@ const AblaufKostenTitle = styled.h2`
 	font-size: 2.5rem;
 	color: #1a4d61;
 	padding: 0rem;
+	justify-content: center;
 	position: relative;
+	margin: auto;
 	margin-left: 1rem;
 	text-align: center;
 
@@ -365,6 +366,7 @@ const Teaser = styled.div`
 
 	@media (max-width: 425px) {
 		justify-content: center;
+		text-align: left;
 	}
 
 	@media (max-width: 375px) {

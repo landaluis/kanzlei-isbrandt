@@ -93,6 +93,10 @@ export default function AblaufKostenContent({ currentLanguage }) {
 const ContentBox = styled.div`
 	border-radius: 10px;
 	text-align: justify;
+
+	@media (max-width: 425px) {
+		text-align: left;
+	}
 `;
 
 const ImageContainer = styled.div`

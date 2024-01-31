@@ -27,7 +27,6 @@ export default function HomeContent({ currentLanguage }) {
 						<Image
 							src={Startseite}
 							alt="CI Photo"
-							placeholder="blur"
 							priority={true}
 							style={{
 								height: "100%",
@@ -173,7 +172,6 @@ const AblaufKostenWrapper = styled.div`
 	border-radius: 10px;
 	width: auto;
 	padding: 2rem;
-	// padding-bottom: 0rem;
 	justify-content: space-around;
 	margin: auto;
 	margin-top: 2rem;
@@ -185,9 +183,6 @@ const AblaufKostenWrapper = styled.div`
 	&:hover {
 		background-color: rgba(26, 77, 97, 0.2);
 	}
-	// @media (max-width: 425px) {
-	// 	padding: 0rem;
-	// }
 `;
 const AblaufKostenTitle = styled.h2`
 	display: flex;
@@ -296,9 +291,14 @@ const ImageContainer = styled.div`
 		margin-right: 0;
 	}
 
-	@media (max-width: 290px) {
-		height: 25rem;
+	@media (max-width: 350px) {
 		width: auto;
+		height: 25rem;
+	}
+
+	@media (max-width: 330px) {
+		width: auto;
+		height: 20rem;
 	}
 `;
 const HomeWrapper = styled.div`

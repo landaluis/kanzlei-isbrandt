@@ -22,82 +22,82 @@ export default function UbermichContent({ currentLanguage }) {
 									style={{
 										height: "100%",
 										width: "auto",
-										// maxWidth: "100%",
 									}}
 								/>
 							</ImageContainer2>
-							<p>
-								{currentLanguage === "DE"
-									? "Ich studierte Rechtswissenschaften an der Universität Bielefeld. Bereits dort legte ich meinen Interessensschwerpunkt auf das Migrationsrecht und belegte den Schwerpunktbereich 'Einwanderung und soziale Integration'."
-									: "I studied law at the University of Bielefeld. Already there, I focused my interests on migration law and chose the specialization 'Immigration and Social Integration.' "}
-							</p>
+							<UberText>
+								<p>
+									{currentLanguage === "DE"
+										? "Ich studierte Rechtswissenschaften an der Universität Bielefeld. Bereits dort legte ich meinen Interessensschwerpunkt auf das Migrationsrecht und belegte den Schwerpunktbereich 'Einwanderung und soziale Integration'."
+										: "I studied law at the University of Bielefeld. Already there, I focused my interests on migration law and chose the specialization 'Immigration and Social Integration.' "}
+								</p>
 
-							<p>
-								{currentLanguage === "DE"
-									? "Nach dem Ersten Staatsexamen absolvierte ich das Referendariat am Landgericht Bielefeld. Meine Anwalts – sowie Wahlstation absolvierte ich in einer auf Migrationsrecht spezialisierten Kanzlei."
-									: "After completing the First State Examination, I undertook my legal clerkship at the District Court in Bielefeld. I completed my internship and elective clerkship at a law firm specializing in migration law."}
-							</p>
+								<p>
+									{currentLanguage === "DE"
+										? "Nach dem Ersten Staatsexamen absolvierte ich das Referendariat am Landgericht Bielefeld. Meine Anwalts – sowie Wahlstation absolvierte ich in einer auf Migrationsrecht spezialisierten Kanzlei."
+										: "After completing the First State Examination, I undertook my legal clerkship at the District Court in Bielefeld. I completed my internship and elective clerkship at a law firm specializing in migration law."}
+								</p>
 
-							<p>
-								{currentLanguage === "DE"
-									? "Nach meinem Zweiten Staatsexamen und der Zulassung zur Anwaltschaft habe ich zunächst zweieinhalb Jahre als angestellte Rechtsanwältin in einer renommierten Kanzlei für Migrations- und Sozialrecht in Bielefeld gearbeitet."
-									: "Following my Second State Examination and admission to the bar, I initially worked as an employed lawyer for two and a half years at a renowned law firm specializing in migration and social law in Bielefeld."}
-							</p>
+								<p>
+									{currentLanguage === "DE"
+										? "Nach meinem Zweiten Staatsexamen und der Zulassung zur Anwaltschaft habe ich zunächst zweieinhalb Jahre als angestellte Rechtsanwältin in einer renommierten Kanzlei für Migrations- und Sozialrecht in Bielefeld gearbeitet."
+										: "Following my Second State Examination and admission to the bar, I initially worked as an employed lawyer for two and a half years at a renowned law firm specializing in migration and social law in Bielefeld."}
+								</p>
 
-							<p>
-								{currentLanguage === "DE"
-									? "Meine Rechtsanwaltskanzlei wurde im Jahr 2024 gegründet. In meiner Kanzlei biete ich neben dem Rechtsgebiet Migrationsrecht auch das Rechtsgebiet Arbeitsrecht an."
-									: "I established my own law firm in the year 2024. In addition to specializing in migration law, my practice also covers the field of labor law."}
-							</p>
+								<p>
+									{currentLanguage === "DE"
+										? "Meine Rechtsanwaltskanzlei wurde im Jahr 2024 gegründet. In meiner Kanzlei biete ich neben dem Rechtsgebiet Migrationsrecht auch das Rechtsgebiet Arbeitsrecht an."
+										: "I established my own law firm in the year 2024. In addition to specializing in migration law, my practice also covers the field of labor law."}
+								</p>
 
-							<p>
-								{currentLanguage === "DE"
-									? "Mitgliedschaften:"
-									: "Memberships:"}
-							</p>
-							<ul>
-								<li>
+								<Mitgliedschaften>
+									<p style={{ marginTop: "0" }}>
+										{currentLanguage === "DE"
+											? "Mitgliedschaften:"
+											: "Memberships:"}
+									</p>
+									<li>
+										{currentLanguage === "DE"
+											? "Deutscher Anwaltverein (DAV)"
+											: "Deutscher Anwaltverein (DAV)"}
+									</li>
+									<li>
+										{currentLanguage === "DE"
+											? "Bielefelder Anwaltverein"
+											: "Bielefelder Anwaltverein"}
+									</li>
+									<li>
+										{currentLanguage === "DE"
+											? "Arbeitsgemeinschaft Migrationsrecht beim Deutschen Anwaltverein"
+											: "Arbeitsgemeinschaft Migrationsrecht beim Deutschen Anwaltverein"}
+									</li>
+									<li>
+										{currentLanguage === "DE"
+											? "Republikanischer Anwältinnen- Und Anwälteverein e.V."
+											: "Republikanischer Anwältinnen- Und Anwälteverein e.V."}{" "}
+									</li>
+									<li>
+										{currentLanguage === "DE"
+											? "FORUM Junge Anwaltschaft"
+											: "FORUM Junge Anwaltschaft"}
+									</li>
+									<li>
+										{currentLanguage === "DE"
+											? "Deutscher Juristinnenbund e.V."
+											: "Deutscher Juristinnenbund e.V."}{" "}
+									</li>
+								</Mitgliedschaften>
+								<p>
 									{currentLanguage === "DE"
-										? "Deutscher Anwaltverein (DAV)"
-										: "Deutscher Anwaltverein (DAV)"}
-								</li>
-								<li>
+										? "Da mir der Austausch unter jungen Anwält*innen und Berufsanfänger*innen wichtig ist, bin ich seit August 2023 Regionalbeauftragte für das FORUM Junge Anwaltschaft im Landgerichtsbezirk Bielefeld. "
+										: " Since August 2023, I have been serving as the Regional Representative for the FORUM Young Lawyers in the Bielefeld Regional Court district, as I consider the exchange among young lawyers and beginners in the field crucial. "}{" "}
+								</p>
+								<p>
 									{currentLanguage === "DE"
-										? "Bielefelder Anwaltverein"
-										: "Bielefelder Anwaltverein"}
-								</li>
-								<li>
-									{currentLanguage === "DE"
-										? "Arbeitsgemeinschaft Migrationsrecht beim Deutschen Anwaltverein"
-										: "Arbeitsgemeinschaft Migrationsrecht beim Deutschen Anwaltverein"}
-								</li>
-								<li>
-									{currentLanguage === "DE"
-										? "Republikanischer Anwältinnen- Und Anwälteverein e.V."
-										: "Republikanischer Anwältinnen- Und Anwälteverein e.V."}{" "}
-								</li>
-								<li>
-									{currentLanguage === "DE"
-										? "FORUM Junge Anwaltschaft"
-										: "FORUM Junge Anwaltschaft"}
-								</li>
-								<li>
-									{currentLanguage === "DE"
-										? "Deutscher Juristinnenbund e.V."
-										: "Deutscher Juristinnenbund e.V."}{" "}
-								</li>
-							</ul>
-
-							<p>
-								{currentLanguage === "DE"
-									? "Da mir der Austausch unter jungen Anwält*innen und Berufsanfänger*innen wichtig ist, bin ich seit August 2023 Regionalbeauftragte für das FORUM Junge Anwaltschaft im Landgerichtsbezirk Bielefeld. "
-									: " Since August 2023, I have been serving as the Regional Representative for the FORUM Young Lawyers in the Bielefeld Regional Court district, as I consider the exchange among young lawyers and beginners in the field crucial. "}{" "}
-							</p>
-							<p>
-								{currentLanguage === "DE"
-									? "Zudem bin ich für die Karin und Walter Blüchert Gedächtnisstiftung mit Sitz in Hamburg als wissenschaftliche Mitarbeiterin in dem Projekt 'Soziales Entschädigungsrecht' ehrenamtlich tätig."
-									: "Additionally, I volunteer as a research assistant in the project 'Social Compensation Law' for the Karin and Walter Blüchert Memorial Foundation based in Hamburg."}
-							</p>
+										? "Zudem bin ich für die Karin und Walter Blüchert Gedächtnisstiftung mit Sitz in Hamburg als wissenschaftliche Mitarbeiterin in dem Projekt 'Soziales Entschädigungsrecht' ehrenamtlich tätig."
+										: "Additionally, I volunteer as a research assistant in the project 'Social Compensation Law' for the Karin and Walter Blüchert Memorial Foundation based in Hamburg."}
+								</p>
+							</UberText>
 						</Content>
 					</ContentWrapper>
 					<ImageContainer>
@@ -115,6 +115,13 @@ export default function UbermichContent({ currentLanguage }) {
 		</>
 	);
 }
+const UberText = styled.div``;
+
+const Mitgliedschaften = styled.ul`
+	display: flex;
+	flex-direction: column;
+	margin-top: 0;
+`;
 
 const ImageContainer2 = styled.div`
 	position: relative;
@@ -136,9 +143,14 @@ const ImageContainer2 = styled.div`
 		margin-bottom: 3rem;
 	}
 
-	@media (max-width: 290px) {
+	@media (max-width: 350px) {
 		width: auto;
 		height: 25rem;
+	}
+
+	@media (max-width: 330px) {
+		width: auto;
+		height: 20rem;
 	}
 `;
 const Content = styled.div`

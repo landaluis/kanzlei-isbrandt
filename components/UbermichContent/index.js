@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Watermark from "../../public/Watermark.webp";
 import Image from "next/image";
-import Übermich from "../../public/Übermich.avif";
+import Übermich from "../../public/Übermich.webp";
 
 export default function UbermichContent({ currentLanguage }) {
 	return (
@@ -22,6 +22,7 @@ export default function UbermichContent({ currentLanguage }) {
 									style={{
 										height: "100%",
 										width: "auto",
+										maxWidth: "100%",
 									}}
 								/>
 							</ImageContainer2>
@@ -179,7 +180,7 @@ const SectionContent = styled.div`
 	position: relative;
 	width: 100%;
 	flex: 1;
-	overflow: hidden;
+	// overflow: hidden;
 `;
 
 const ContentBox = styled.div`
@@ -226,6 +227,7 @@ const ImageContainer = styled.div`
 	z-index: 2;
 	height: 30rem;
 	width: auto;
+	overflow: hidden;
 	@media (max-width: 1540px) {
 		left: 40rem;
 	}

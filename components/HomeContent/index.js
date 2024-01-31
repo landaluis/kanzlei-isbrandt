@@ -6,7 +6,7 @@ import Link from "next/link";
 import Migration from "../../public/Migration.webp";
 import Arbeit from "../../public/Arbeit.webp";
 import EuroZahnrad from "../../public/EuroZahnrad.webp";
-import Startseite from "../../public/Startseite.avif";
+import Startseite from "../../public/Startseite.webp";
 
 export default function HomeContent({ currentLanguage }) {
 	return (
@@ -31,6 +31,7 @@ export default function HomeContent({ currentLanguage }) {
 							style={{
 								height: "100%",
 								width: "auto",
+								maxWidth: "100%",
 							}}
 						/>
 					</ImageContainer>

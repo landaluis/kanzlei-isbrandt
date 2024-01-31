@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import Watermark from "../../public/Watermark.webp";
-import Map from "../../public/Map.avif";
+import Map from "../../public/Map.webp";
 
 export default function KontaktContent({ currentLanguage }) {
 	return (

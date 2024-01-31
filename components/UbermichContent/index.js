@@ -180,7 +180,7 @@ const SectionContent = styled.div`
 	position: relative;
 	width: 100%;
 	flex: 1;
-	// overflow: hidden;
+	overflow: hidden;
 `;
 
 const ContentBox = styled.div`

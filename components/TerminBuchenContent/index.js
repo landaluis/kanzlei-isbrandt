@@ -36,4 +36,7 @@ const TerminWrapper = styled.div`
 		margin-top: 8.5rem;
 		padding: 0.5rem;
 	}
+	@media (max-width: 350px) {
+		padding: 1rem;
+	}
 `;

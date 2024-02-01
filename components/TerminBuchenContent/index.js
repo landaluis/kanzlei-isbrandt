@@ -6,7 +6,7 @@ export default function TerminBuchenContent() {
 		<>
 			<TerminWrapper>
 				<iframe
-					src="https://outlook.office.com/bookwithme/user/e10427a8c9b2439d9095769d6ff65cba@kanzleiisbrandt.onmicrosoft.com/meetingtype/iwaPqNpECkOZcqbXYeb5qQ2?anonymous&ep=mLinkFromTile"
+					src="https://outlook.office.com/bookwithme/user/e10427a8c9b2439d9095769d6ff65cba@kanzleiisbrandt.onmicrosoft.com/meetingtype/iwaPqNpECkOZcqbXYeb5qQ2?anonymous&ep=mlink"
 					style={{
 						border: 0,
 						height: "100%",

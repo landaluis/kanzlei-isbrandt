@@ -30,7 +30,7 @@ export default function ArbeitsrechtContent({ currentLanguage }) {
 							<br />
 							<br />
 							{currentLanguage === "DE"
-								? "Im Bereich des Arbeitsrechts berate und vertrete ich Arbeitnehmer*innen vor Gericht (bspw. in Rahmen einer Kündigungsschutzklage) sowie in außergerichtlichen Verhandlungen mit der*die Arbeitgeber*in. "
+								? "Im Bereich des Arbeitsrechts berate und vertrete ich Arbeitnehmer*innen vor Gericht (bspw. in Rahmen einer Kündigungsschutzklage) sowie in außergerichtlichen Verhandlungen mit dem/der Arbeitgeber*in. "
 								: "In the field of employment law, I provide advice and representation to employees in court (for example, in the context of an unfair dismissal lawsuit) as well as in out-of-court negotiations with employers."}
 							<br />
 							<br />

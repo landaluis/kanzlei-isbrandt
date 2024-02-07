@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import ReactGA from "react-ga";
 import Footer from "@/components/Footer";
 import HomeContent from "@/components/HomeContent";
+import { useEffect } from "react";
 
 export default function Home({ handleClick, currentLanguage }) {
 	useEffect(() => {

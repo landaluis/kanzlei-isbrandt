@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }) {
 				src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
 				strategy="afterInteractive"
 			/>
-			<Script strategy="afterInteractive">
+			<Script id="scriptGA1" strategy="afterInteractive">
 				{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

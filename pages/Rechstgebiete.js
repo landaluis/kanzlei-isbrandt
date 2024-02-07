@@ -3,9 +3,12 @@ import ReactGA from "react-ga";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RechtsgebieteContent from "@/components/RechtsgebieteContent";
+import { useEffect } from "react";
 
 export default function RechtsgebietePage() {
-	ReactGA.pageview(window.location.pathname + window.location.search);
+	useEffect(() => {
+		ReactGA.pageview(window.location.pathname + window.location.search);
+	}, []);
 	return (
 		<>
 			<Header />

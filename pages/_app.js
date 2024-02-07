@@ -2,8 +2,14 @@ import GlobalStyle from "@/styles";
 import Head from "next/head";
 import { useState, useEffect } from "react";
 import Script from "next/script";
+import ReactGA from "react-ga";
+ReactGA.initialize(process.env.NEXT_PUBLIC_GA_TRACKING_ID);
 
 export default function App({ Component, pageProps }) {
+	useEffect(() => {
+		ReactGA.pageview(window.location.pathname + window.location.search);
+	}, []);
+
 	const [currentLanguage, setCurrentLanguage] = useState("DE");
 
 	useEffect(() => {
@@ -32,6 +38,21 @@ export default function App({ Component, pageProps }) {
 				/>
 				<title>Kanzlei Isbrandt</title>
 			</Head>
+
+			{/* Google Analytics Script */}
+			<Script
+				src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
+				strategy="afterInteractive"
+			/>
+			<Script strategy="afterInteractive">
+				{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING_ID}');
+        `}
+			</Script>
+
 			<Script
 				id="cookieyes"
 				type="text/javascript"

@@ -19,6 +19,7 @@ export default function UbermichContent({ currentLanguage }) {
 									src={Übermich}
 									alt="CI Photo"
 									priority={true}
+									loading="eager"
 									style={{
 										height: "100%",
 										width: "auto",

@@ -28,6 +28,7 @@ export default function HomeContent({ currentLanguage }) {
 							src={Startseite}
 							alt="CI Photo"
 							priority={true}
+							loading="eager"
 							style={{
 								height: "100%",
 								width: "auto",
